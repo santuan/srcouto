@@ -22,7 +22,7 @@ export default function Container(props) {
   const meta = {
     title: 'Santiago Rodriguez Couto',
     description: `Desarrollador y diseñador de páginas web.`,
-    image: 'https://www.santuan.com.ar/ogimage.jpg',
+    image: 'https://srcouto.vercel.app/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
