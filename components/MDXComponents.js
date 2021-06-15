@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Step from '@/components/Step';
-import ImageWithTheme from '@/components/ImageWithTheme';
+import ImageWithTheme from '@/components/ImageWithTheme.js';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -19,8 +18,7 @@ const CustomLink = (props) => {
 const MDXComponents = {
   Image,
   ImageWithTheme,
-  a: CustomLink,
-  Step
+  a: CustomLink
 };
 
 export default MDXComponents;
