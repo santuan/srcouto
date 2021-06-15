@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImageWithTheme from '@/components/ImageWithTheme.js';
+import ImageWithTheme from '@/components/ImageTheme';
 
 const CustomLink = (props) => {
   const href = props.href;
