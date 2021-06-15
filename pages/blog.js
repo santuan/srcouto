@@ -34,7 +34,7 @@ export default function Blog({ posts }) {
             aria-label="Search articles"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Buscar en el blog"
+            placeholder="Buscar"
             className="block w-full px-4 py-2 font-mono text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
           />
           <svg

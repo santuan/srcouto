@@ -7,17 +7,17 @@ export default function Home() {
     <Container>
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 font-serif text-3xl font-bold text-black md:text-5xl dark:text-white">
-          Hola! Soy Santiago Rodriguez Couto
+          Hola, soy Santiago Rodriguez Couto
         </h1>
         <h2 className="mb-6 text-xl text-gray-600 dark:text-gray-400">
-          Me apasiona el diseño, la programación y todo lo que tenga que ver con
-          el mundo del software libre. Traduzco
+          Realizó páginas web y me apasiona todo lo que tenga que ver con el
+          mundo del software libre. Traduzco
           <NextLink href="/blog">
             <a className="inline-block mx-1 text-blue-500 underline hover:text-blue-600">
               artículos
             </a>
           </NextLink>
-          del inglés al castellano y también colaboro en varios
+          que me interesan del inglés al castellano y también colaboro en varios
           <NextLink href="/proyectos">
             <a className="inline-block mx-1 text-blue-500 underline hover:text-blue-600">
               proyectos

@@ -10,7 +10,9 @@ const BlogPost = ({ title, summary, link }) => {
               {title}
             </h4>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">{summary}</p>
+          <p className="pr-0 text-gray-600 dark:text-gray-400 md:mr-24">
+            {summary}
+          </p>
           <a
             href={link}
             className="top-0 right-0 text-blue-500 border-b border-blue-400 hover:text-blue-600 dark:border-blue-600 md:absolute"

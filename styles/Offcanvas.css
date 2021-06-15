@@ -142,7 +142,7 @@
   right: 0;
   width: 120px;
   height: 50px;
-  @apply bg-white top-3 dark:bg-gray-900;
+  @apply top-3;
   z-index: 9999;
   display: flex;
   justify-content: center;

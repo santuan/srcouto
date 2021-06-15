@@ -70,16 +70,14 @@ export default function Container(props) {
         )}
       </button>
       <Headroom disableInlineStyles>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-full px-4 mx-auto lg:px-0 lg:max-w-2xl">
           <nav className="flex items-center justify-between w-full py-6 lg:py-0 ">
             <a href="#skip" className="sr-only skip-nav">
               Skip to content
             </a>
-            <div className="ml-2 text-xl font-bold tracking-wider md:ml-0 ">
+            <div className="ml-0 text-xl font-bold tracking-wider ">
               <NextLink href="/">
-                <a className="block font-mono transition-all duration-700 ease-in-out hover:opacity-80">
-                  SRCOUTO
-                </a>
+                <a className="block font-mono hover:opacity-80">SRCOUTO</a>
               </NextLink>
             </div>
             <div className="justify-end hidden uppercase lg:flex">

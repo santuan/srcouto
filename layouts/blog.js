@@ -73,7 +73,6 @@ export default function BlogLayout({ children, frontMatter }) {
           <div className="flex flex-col items-start justify-between w-full max-w-2xl mx-auto my-2 md:flex-row md:items-center">
             <div className="flex items-center">
               <p className="text-base text-gray-700 dark:text-gray-300">
-                {'Santiago Couto / '}
                 <time className="capitalize">
                   {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy', {
                     locale: es

@@ -1,18 +1,13 @@
 import { useState } from 'react';
 import Container from '@/components/Container';
 import ProjectPost from '@/components/ProjectPost';
+import Timeline from '@/components/Timeline';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 export default function Blog({ posts }) {
-  const [searchValue, setSearchValue] = useState('');
-  const filteredProjectPosts = posts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    )
-    .filter((frontMatter) =>
-      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+  const filteredProjectPosts = posts.sort(
+    (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+  );
   return (
     <Container
       title="Blog | Santuan"
@@ -23,11 +18,13 @@ export default function Blog({ posts }) {
           Proyectos
         </h1>
         <p className="mb-6 text-xl text-gray-600 dark:text-gray-400">
-          Rincones de la web que donde colaboro activamente.
+          Rincones de la web donde participo.
         </p>
         {filteredProjectPosts.map((frontMatter) => (
           <ProjectPost key={frontMatter.title} {...frontMatter} />
         ))}
+        <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
+        <Timeline />
       </div>
     </Container>
   );
