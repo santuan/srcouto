@@ -9,7 +9,7 @@ const Divider = () => {
 
 const Year = ({ children }) => {
   return (
-    <h3 className="mb-4 ml-4 font-serif text-lg font-bold tracking-tight text-right text-gray-500 md:text-2xl dark:text-gray-600">
+    <h3 className="mb-4 ml-4 font-serif text-lg font-bold tracking-tight text-right text-gray-700 md:text-2xl dark:text-gray-300">
       {children}
     </h3>
   );
@@ -23,6 +23,7 @@ const Step = ({ title, link, children }) => {
         <a
           href={link}
           target="_blank"
+          rel="noopener noreferrer"
           className="ml-4 text-xl font-medium text-gray-900 underline dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
         >
           {title}
@@ -92,7 +93,29 @@ export default function Timeline() {
           </div>
         </Step>
       </ul>
-
+      <ul>
+        <Step
+          title="Centro de Estudios Ajmátova"
+          link="https://www.centroestudiosajmatova.com.ar/"
+        >
+          La enseñanza de los matices lingüísticos, la gramática del Español
+          inmersos en las culturas Latinoamericana y Rusa.
+          <div className="mt-3">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Tailwind
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Gatsby.js
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Sanity.io
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Netlify
+            </div>
+          </div>
+        </Step>
+      </ul>
       <Divider />
       <Year>2020</Year>
       <ul>
