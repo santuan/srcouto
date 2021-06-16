@@ -15,7 +15,7 @@ const BlogPost = ({ title, summary, link }) => {
           </p>
           <a
             href={link}
-            className="absolute top-0 right-0 text-gray-800 border-b border-blue-400 hover:text-gray-200 dark:border-blue-600"
+            className="absolute top-0 right-0 text-gray-800 border-b border-blue-400 hover:text-gray-200 dark:text-white dark:border-blue-600"
             target="_blank"
             rel="noopener noreferrer"
           >
