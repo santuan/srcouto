@@ -83,6 +83,7 @@
   height: 24px;
   width: 24px;
   z-index: 99;
+  @apply hidden;
 }
 
 /* Color/shape of close button cross */
