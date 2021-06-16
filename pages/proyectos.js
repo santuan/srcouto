@@ -10,7 +10,7 @@ export default function Blog({ posts }) {
   );
   return (
     <Container
-      title="Blog | Santuan"
+      title="Proyectos | Santiago Couto"
       description="Artículos en inglés buscando su sentido en el Español. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
