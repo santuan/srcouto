@@ -57,7 +57,7 @@ export default function BlogLayout({ children, frontMatter }) {
     <Container
       title={`${frontMatter.title} – Santiago Couto`}
       description={frontMatter.summary}
-      image={`https://srcouto.vercel.app/${frontMatter.image}`}
+      image={`https://srcouto.vercel.app${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >

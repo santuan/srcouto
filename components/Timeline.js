@@ -50,10 +50,32 @@ export default function Timeline() {
       <SubHeading title="Páginas web realizadas" />
       <Year>2021</Year>
       <ul>
+        <Step title="Santuan" link="https://www.santuan.com.ar/">
+          Versión experimental utilizando el mismo contenido de este sitio pero
+          con un impronta más visual.
+          <div className="mt-3">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Tailwind
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Gatsby.js
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Contentful
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Netlify
+            </div>
+          </div>
+        </Step>
+      </ul>
+      <ul>
         <Step
           title="Bomberos Voluntarios Luján de Cuyo"
           link="https://bomberoslujandecuyo.org.ar/"
         >
+          El Cuerpo de Bomberos Voluntarios de Luján fue fundado el 5 de Agosto
+          de 1968, por un grupo de vecinos comerciantes del departamento.
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
@@ -70,11 +92,14 @@ export default function Timeline() {
           </div>
         </Step>
       </ul>
+
       <Divider />
       <Year>2020</Year>
       <ul>
         <Step title="Sol Etchegaray" link="https://www.soletchegaray.com.ar/">
-          Web de fotografía.
+          Web de fotografía donde se busca naturalizar el cuerpo desnudo y
+          visibilizar la diversidad de los cuerpos, captando los detalles tan
+          bellos y únicos que nos caracterizan
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
@@ -92,6 +117,7 @@ export default function Timeline() {
         </Step>
         <Step title="Cucha Estudio" link="https://www.cuchaestudio.com/">
           Cucha es un estudio de diseño con base en Barcelona, España.
+          especializado en branding, diseño editorial y redes sociales.
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
