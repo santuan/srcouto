@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const ExternalLink = ({ href, children }) => (
   <a
-    className="text-gray-700 transition hover:text-gray-300"
+    className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
@@ -16,22 +16,24 @@ export default function Footer() {
     <footer className="flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-8">
       <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
       <div className="grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 text-center sm:grid-cols-2">
-        <div className="flex flex-col space-y-5">
+        <div className="flex flex-col space-y-4">
           <Link href="/">
-            <a className="text-gray-700 transition hover:text-gray-300">
+            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
               Inicio
             </a>
           </Link>
           <Link href="/blog">
-            <a className="text-gray-700 transition hover:text-gray-300">Blog</a>
+            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
+              Blog
+            </a>
           </Link>
           <Link href="/proyectos">
-            <a className="text-gray-700 transition hover:text-gray-300">
+            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
               Proyectos
             </a>
           </Link>
           <Link href="/contacto">
-            <a className="text-gray-700 transition hover:text-gray-300">
+            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
               Contacto
             </a>
           </Link>
