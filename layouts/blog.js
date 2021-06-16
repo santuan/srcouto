@@ -86,7 +86,7 @@ export default function BlogLayout({ children, frontMatter }) {
             </p>
           </div>
           <hr className="w-full max-w-2xl mx-auto border-t border-gray-300 dark:border-gray-800" />
-          <div className="w-full font-serif prose text-justify lg:prose-lg lg:prose-xl hyphens dark:prose-dark max-w-none">
+          <div className="w-full font-serif prose prose-lg lg:prose-xl hyphens dark:prose-dark max-w-none">
             {children}
           </div>
         </article>
