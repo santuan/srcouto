@@ -4,7 +4,7 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-  @apply max-w-2xl mx-auto text-left;
+  @apply max-w-2xl px-4 mx-auto text-left;
 }
 
 .prose h3 {
@@ -17,7 +17,7 @@
 
 .prose ul,
 .prose ol {
-  @apply max-w-2xl mx-auto;
+  @apply max-w-2xl px-4 mx-auto;
 }
 
 .prose.hyphens p {
@@ -40,7 +40,7 @@
 }
 
 .prose p {
-  @apply max-w-2xl mx-auto;
+  @apply max-w-2xl px-4 mx-auto;
 }
 
 .prose a.external-link {

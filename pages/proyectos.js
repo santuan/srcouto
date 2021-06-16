@@ -14,12 +14,13 @@ export default function Blog({ posts }) {
       description="Artículos en inglés buscando su sentido en el castellano. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 font-serif text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="px-4 mb-4 font-serif text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Proyectos
         </h1>
-        <p className="mb-6 text-xl text-gray-600 dark:text-gray-400">
-          Rincones de la web donde participo.
+        <p className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
+          Rincones en la web donde participo de manera activa.
         </p>
+        <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
         {filteredProjectPosts.map((frontMatter) => (
           <ProjectPost key={frontMatter.title} {...frontMatter} />
         ))}

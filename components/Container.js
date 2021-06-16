@@ -70,7 +70,7 @@ export default function Container(props) {
         )}
       </button>
       <Headroom disableInlineStyles>
-        <div className="max-w-full px-4 mx-auto lg:px-0 lg:max-w-2xl">
+        <div className="max-w-full px-8 mx-auto lg:px-4 lg:max-w-2xl">
           <nav className="flex items-center justify-between w-full py-6 lg:py-0 ">
             <a href="#skip" className="sr-only skip-nav">
               Skip to content
@@ -116,7 +116,7 @@ export default function Container(props) {
       >
         <main
           id="skip"
-          className="flex flex-col justify-center px-8 pt-24 bg-white dark:bg-gray-900"
+          className="flex flex-col justify-center px-4 pt-24 bg-white lg:px-8 dark:bg-gray-900"
         >
           {children}
           <Footer />

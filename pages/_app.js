@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import '@/styles/Offcanvas.css';
 import '@/styles/Header.css';
 import '@/styles/BlogPost.css';
-import '@fontsource/yeseva-one';
+import '@fontsource/fira-sans';
 import '@fontsource/space-mono';
 import '@fontsource/vollkorn';
 import { ThemeProvider } from 'next-themes';

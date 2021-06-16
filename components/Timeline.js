@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import SubHeading from './Typography/SubHeading';
+import { FiChevronsRight } from 'react-icons/fi';
 const Divider = () => {
   return (
     <div className="w-full my-8 border border-gray-200 dark:border-gray-600" />
@@ -8,34 +9,26 @@ const Divider = () => {
 
 const Year = ({ children }) => {
   return (
-    <h3 className="mb-4 ml-1 text-lg font-bold tracking-tight text-gray-900 md:text-2xl dark:text-gray-100">
+    <h3 className="mb-4 ml-4 font-serif text-lg font-bold tracking-tight text-right text-gray-500 md:text-2xl dark:text-gray-600">
       {children}
     </h3>
   );
 };
 
-const Step = ({ title, children }) => {
+const Step = ({ title, link, children }) => {
   return (
-    <li className="mb-10 ml-4">
-      <div className="flex items-center mb-2 text-gray-700 dark:text-gray-300">
-        <span className="sr-only">Check</span>
-        <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24">
-          <g
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-            <path d="M22 4L12 14.01l-3-3" />
-          </g>
-        </svg>
-        <p className="ml-4 text-xl font-medium text-gray-900 dark:text-gray-100">
+    <li className="relative mx-4 mb-12 md:mb-10">
+      <div className="flex items-start mb-2 text-gray-700 dark:text-gray-300">
+        <FiChevronsRight className="relative top-1" />
+        <a
+          href={link}
+          target="_blank"
+          className="ml-4 text-xl font-medium text-gray-900 underline dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
+        >
           {title}
-        </p>
+        </a>
       </div>
-      <p className="ml-10 text-gray-700 dark:text-gray-400">{children}</p>
+      <p className="ml-8 text-gray-700 dark:text-gray-400">{children}</p>
     </li>
   );
 };
@@ -54,23 +47,24 @@ export default function Timeline() {
 
   return (
     <>
-      <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-        Páginas web realizadas
-      </h3>
+      <SubHeading title="Páginas web realizadas" />
       <Year>2021</Year>
       <ul>
-        <Step title="Bomberos Voluntarios Luján de Cuyo">
+        <Step
+          title="Bomberos Voluntarios Luján de Cuyo"
+          link="https://bomberoslujandecuyo.org.ar/"
+        >
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Next.js
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Sanity.io
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Vercel
             </div>
           </div>
@@ -79,101 +73,87 @@ export default function Timeline() {
       <Divider />
       <Year>2020</Year>
       <ul>
-        <Step title="Centro de Estudios Ajmátova">
-          Centro de idiomas contemporáneo especializado en el desarrollo de
-          programas de capacitación y enseñanza de lenguas extranjeras con una
-          perspectiva multicultural generando un espacio de aprendizaje de nivel
-          académico.
+        <Step title="Sol Etchegaray" link="https://www.soletchegaray.com.ar/">
+          Web de fotografía.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Gatsby.js
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Sanity
-            </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Netlify
-            </div>
-          </div>
-        </Step>
-        <Step title="Sol Etchegaray">
-          Web de fotografía
-          <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Tailwind
-            </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Gatsby.js
-            </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Contentful
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Netlify
             </div>
           </div>
         </Step>
-        <Step title="Cucha Estudio">
+        <Step title="Cucha Estudio" link="https://www.cuchaestudio.com/">
           Cucha es un estudio de diseño con base en Barcelona, España.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Gatsby.js
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Contentful
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Netlify
             </div>
           </div>
         </Step>
         <Step title="Germinación del Camino">
-          La aplicación cuenta con un buscador para facilitar el acceso a la
-          información y se busca enfatizar las virtudes de las plantas por sobre
-          las dolencias a las que pueden ser de utilidad.
+          App para facilitar el acceso a la información y se busca enfatizar las
+          virtudes de las plantas por sobre las dolencias a las que pueden ser
+          de utilidad.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Gatsby.js
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Algolia
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Netlify
             </div>
           </div>
         </Step>
-        <Step title="Alan Sutton">
-          Sitio web realizado en Wordpress y adaptando la imagen y el diseño
-          utilizado para el lanzamiento de La Era del Rivotril.
+        <Step
+          title="Alan Sutton"
+          link="https://www.alansutton.com.ar/biografia/"
+        >
+          Sitio web realizado adaptando la imagen y el diseño utilizado para el
+          lanzamiento del disco La Era del Rivotril.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Wordpress
             </div>
           </div>
         </Step>
-        <Step title="Estudio Luis Romero">
-          Sitio web en Wordpress para el director de teatro Luis Romero
+        <Step title="Estudio Luis Romero" link="https://estudioluisromero.com/">
+          Sitio web para el director de teatro Luis Romero
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Wordpress
             </div>
           </div>
         </Step>
-        <Step title="Afda - Libre de VIolencias">
+        <Step
+          title="Afda - Libre de VIolencias"
+          link="https://www.afda.org.ar/libre-de-violencias/"
+        >
           Sitio web para la Asociación Familias Diversas de Argentina sobre
           violencias y derechos sexuales.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Vue.js
             </div>
           </div>
@@ -182,35 +162,11 @@ export default function Timeline() {
       <Divider />
       <Year>2019</Year>
       <ul>
-        <Step title="Madejandola">
+        <Step title="Madejandola" link="http://madejandola.com/">
           Un universo repleto de historias que nacen en los hilos de América
           Latina.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Wordpress
-            </div>
-          </div>
-        </Step>
-
-        <Step title="Clinicas Colectivas">
-          Las Clínicas Colectivas de Artes Visuales es un proyecto que comenzó
-          en el año 2013 con el objetivo de reunir y convocar artistas de la
-          zona de la Comarca Andina del Paralelo 42.
-          <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Jekyll
-            </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
-              Github
-            </div>
-          </div>
-        </Step>
-        <Step title="Jibsa">
-          Una empresa comprometida con la preservación del patrimonio
-          arquitectónico, la seguridad edilicia y las buenas formas
-          empresariales.
-          <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Wordpress
             </div>
           </div>
@@ -219,36 +175,59 @@ export default function Timeline() {
       <Divider />
       <Year>2018</Year>
       <ul>
-        <Step title="Jibsa">
+        <Step title="Jibsa" link="http://jibsa.com.ar/">
           Una empresa comprometida con la preservación del patrimonio
           arquitectónico, la seguridad edilicia y las buenas formas
           empresariales.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Wordpress
             </div>
           </div>
         </Step>
+        <Step
+          title="Clinicas Colectivas"
+          link="https://clinicascolectivas.github.io/"
+        >
+          Las Clínicas Colectivas de Artes Visuales es un proyecto que comenzó
+          en el año 2013 con el objetivo de reunir y convocar artistas de la
+          zona de la Comarca Andina del Paralelo 42.
+          <div className="mt-3">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Jekyll
+            </div>
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Github
+            </div>
+          </div>
+        </Step>
       </ul>
+
       <Divider />
       <Year>2017</Year>
       <ul>
-        <Step title="Saraña Huwitaqui">
+        <Step
+          title="Saraña Huwitaqui"
+          link="https://www.instagram.com/saranahuwitaqui/"
+        >
           Un proyecto de Recreación, “Caminando Nuestra Bonita Tierra”.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Logo
             </div>
           </div>
         </Step>
-        <Step title="Vecinal del Paraje Entre Rios">
+        <Step
+          title="Vecinal del Paraje Entre Rios"
+          link="https://www.vecinaldelparaje.com.ar/"
+        >
           Vecinos y vecinas que nos juntamos a participar de esto llamado
           convivir.
           <div className="mt-3">
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Jekyll
             </div>
-            <div className="inline-block px-2 py-1 mr-1 font-sans text-sm font-bold text-gray-900 border-b border-gray-400 dark:text-white">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Github
             </div>
           </div>

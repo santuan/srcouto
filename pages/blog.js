@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Container from '@/components/Container';
 import BlogPost from '@/components/BlogPost';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
+import SubHeading from '@/components/Typography/SubHeading';
+import FeaturedPost from '@/components/Typography/Featured';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
@@ -19,26 +21,26 @@ export default function Blog({ posts }) {
       description="Artículos en inglés buscando su sentido en el castellano. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 font-serif text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="px-4 mb-4 font-serif text-4xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
 
-        <p className="mb-6 text-xl text-gray-600 dark:text-gray-400">
-          Artículos en inglés traducidos al castellano. Historias y recursos que
+        <p className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
+          Artículos en Inglés traducidos al Castellano. Historias y recursos que
           se relacionan con el mundo del diseño, la programación y el software
           libre.
         </p>
 
-        <div className="relative w-full mb-4">
+        <div className="relative w-full px-3 mb-4">
           <input
             aria-label="Search articles"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder="Buscar"
-            className="block w-full px-4 py-2 font-mono text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
+            className="block w-full px-4 py-2 text-lg text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-md dark:placeholder-gray-600 font-caption dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
           />
           <svg
-            className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
+            className="absolute w-5 h-5 text-gray-400 right-6 top-3 dark:text-gray-300"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -51,36 +53,17 @@ export default function Blog({ posts }) {
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>
-          <div className="mx-3 mt-2 font-mono text-sm text-gray-700 md:m-0 md:absolute top-3 right-12 dark:text-gray-400">
-            {posts.length} artículos publicados
+          <div className="mx-4 mt-2 text-sm font-bold text-gray-700 font-caption md:m-0 md:absolute top-3 right-16 dark:text-gray-400">
+            {posts.length} artículos
           </div>
         </div>
 
         {!searchValue && (
           <>
-            <h3 className="mt-8 mb-4 text-base font-bold text-black opacity-50 md:text-xl dark:text-white">
-              Recomendados
-            </h3>
-            <BlogPost
-              title="El diseño centrado en las personas"
-              summary="Ser considerado a la hora de resolver problemas."
-              slug="el-diseno-centrado-en-las-personas"
-            />
-            <BlogPost
-              title="De la industria textil a la Luna"
-              summary="La ciudad de Huntsville Alabama."
-              slug="de-la-industria-textil-a-la-luna"
-            />
-            <BlogPost
-              title="La comunicación más corta de la historia"
-              summary="Sobre el complejo significado de dos simples caracteres."
-              slug="la-comunicacion-mas-corta-de-la-historia"
-            />
+            <FeaturedPost title="Textos Recomendados" />
           </>
         )}
-        <h3 className="mt-8 mb-4 text-base font-bold text-black opacity-50 md:text-xl dark:text-white">
-          Todas las entradas
-        </h3>
+        <SubHeading title="Todas las entradas" />
         {!filteredBlogPosts.length && (
           <p className="mb-4 text-gray-600 dark:text-gray-400">
             No hubo resultados a su búsqueda.

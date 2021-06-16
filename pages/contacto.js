@@ -51,7 +51,7 @@ export default function About() {
               </Fade>
             </div>
           </div>
-          <div className="relative z-50 w-full px-1 mx-auto mb-6 font-sans prose-xl text-justify text-gray-600 dark:text-gray-100 hyphens">
+          <div className="relative z-50 w-full max-w-xl px-1 mx-auto mb-6 font-serif prose-xl text-justify text-gray-600 dark:text-gray-100 hyphens">
             <h3 className="font-serif text-center">Sobre mi</h3>
             <p>
               Estudié durante más de 7 años la carrera de diseño gráfico en la

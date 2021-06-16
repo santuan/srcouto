@@ -7,8 +7,8 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: ['Vollkorn', 'serif'],
-      serif: ['Yeseva One', 'serif'],
+      serif: ['Vollkorn', 'serif'],
+      sans: ['Fira Sans', 'sans'],
       mono: ['Space Mono', 'mono']
     },
     extend: {

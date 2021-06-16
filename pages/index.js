@@ -1,15 +1,16 @@
 import NextLink from 'next/link';
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
+import SubHeading from '@/components/Typography/SubHeading';
 
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 font-serif text-3xl font-bold text-black md:text-5xl dark:text-white">
+      <div className="flex flex-col items-start justify-center w-full max-w-full mx-auto mb-16 lg:max-w-2xl">
+        <h1 className="px-4 mb-4 font-serif text-4xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Hola, soy Santiago Rodriguez Couto
         </h1>
-        <h2 className="mb-6 text-xl text-gray-600 dark:text-gray-400">
+        <h2 className="px-4 mb-6 font-sans text-xl text-gray-600 dark:text-gray-400">
           Realizó páginas web y me apasiona todo lo que tenga que ver con el
           mundo del software libre. Traduzco
           <NextLink href="/blog">
@@ -17,7 +18,7 @@ export default function Home() {
               artículos
             </a>
           </NextLink>
-          que me interesan del inglés al castellano y también colaboro en varios
+          que me interesan del Inglés al Castellano y también colaboro en varios
           <NextLink href="/proyectos">
             <a className="inline-block mx-1 text-blue-500 underline hover:text-blue-600">
               proyectos
@@ -26,9 +27,7 @@ export default function Home() {
           y rincones en la web.
         </h2>
         <hr className="w-full border-t border-gray-200 dark:border-gray-800" />
-        <h3 className="mt-12 mb-12 font-sans text-base font-bold text-black opacity-60 md:text-xl dark:text-white">
-          Entradas recomendadas
-        </h3>
+        <SubHeading title="Entradas recomendadas" />
         <BlogPost
           title="El diseño centrado en las personas"
           summary="Ser considerado a la hora de resolver problemas."
