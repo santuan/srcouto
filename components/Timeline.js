@@ -139,8 +139,9 @@ export default function Timeline() {
           </div>
         </Step>
         <Step title="Cucha Estudio" link="https://www.cuchaestudio.com/">
-          Cucha es un estudio de diseño con base en Barcelona, España.
-          especializado en branding, diseño editorial y redes sociales.
+          Desarrollo del sitio web para Cucha, un estudio de diseño con base en
+          Barcelona, España. especializado en diseños de marcas, editorial y
+          redes sociales.
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
               Tailwind
@@ -223,7 +224,25 @@ export default function Timeline() {
             </div>
           </div>
         </Step>
+        <Step title="Fede Schrager" link="http://fedeschrager.com.ar/">
+          Maquetado de sitio web basado en el diseño de{' '}
+          <a
+            className="underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.behance.net/mfetchegaray"
+          >
+            mfetchegaray
+          </a>{' '}
+          por para el DJ Fede Schrager
+          <div className="mt-3">
+            <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
+              Wordpress
+            </div>
+          </div>
+        </Step>
       </ul>
+
       <Divider />
       <Year>2018</Year>
       <ul>
