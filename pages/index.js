@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <Container>
       <div className="flex flex-col items-start justify-center w-full max-w-full mx-auto mb-16 lg:max-w-2xl">
-        <h1 className="px-4 mb-4 font-serif text-4xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        <h1 className="px-4 mb-4 font-sans text-4xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Hola, soy Santiago Rodriguez Couto
         </h1>
-        <h2 className="px-4 mb-6 font-sans text-xl text-gray-600 dark:text-gray-400">
+        <h2 className="relative block px-4 mb-6 font-sans text-xl text-gray-600 dark:text-gray-400">
           Realizó páginas web y me apasiona todo lo que tenga que ver con el
           mundo del software libre. Traduzco
           <NextLink href="/blog">
