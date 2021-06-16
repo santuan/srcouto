@@ -11,7 +11,7 @@ export default function Blog({ posts }) {
   return (
     <Container
       title="Blog | Santuan"
-      description="Artículos en inglés buscando su sentido en el castellano. Historias y recursos relacionados con el mundo del diseño y la programación…"
+      description="Artículos en inglés buscando su sentido en el Español. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
       <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
         <h1 className="px-4 mb-4 font-serif text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">

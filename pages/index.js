@@ -18,7 +18,7 @@ export default function Home() {
               artículos
             </a>
           </NextLink>
-          que me interesan del Inglés al Castellano y también colaboro en varios
+          que me interesan del Inglés al Español y también colaboro en varios
           <NextLink href="/proyectos">
             <a className="inline-block mx-1 text-blue-500 underline hover:text-blue-600">
               proyectos
