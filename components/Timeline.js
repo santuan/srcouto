@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import SubHeading from './Typography/SubHeading';
 import { FiChevronsRight } from 'react-icons/fi';
+
 const Divider = () => {
   return (
-    <div className="w-full my-8 border border-gray-200 dark:border-gray-600" />
+    <div className="w-full my-8 border border-gray-200 dark:border-gray-800" />
   );
 };
 
@@ -19,12 +20,12 @@ const Step = ({ title, link, children }) => {
   return (
     <li className="relative mx-4 mb-12 md:mb-10">
       <div className="flex items-start mb-2 text-gray-700 dark:text-gray-300">
-        <FiChevronsRight className="relative top-1" />
+        <FiChevronsRight className="relative top-1.5" />
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-4 text-xl font-medium text-gray-900 underline dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
+          className="ml-4 text-xl font-medium text-gray-900 uppercase dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
         >
           {title}
         </a>
@@ -98,7 +99,7 @@ export default function Timeline() {
           title="Centro de Estudios Ajmátova"
           link="https://www.centroestudiosajmatova.com.ar/"
         >
-          La enseñanza de los matices lingüísticos, la gramática del Español
+          La enseñanza de los matices lingüísticos y la gramática del Español
           inmersos en las culturas Latinoamericana y Rusa.
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
