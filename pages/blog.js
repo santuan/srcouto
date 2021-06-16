@@ -25,11 +25,11 @@ export default function Blog({ posts }) {
           Blog
         </h1>
 
-        <p className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
+        <h2 className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
           Artículos en Inglés traducidos al Español. Historias y recursos que se
           relacionan con el mundo del diseño, la programación y el software
           libre.
-        </p>
+        </h2>
 
         <div className="relative w-full px-3 mb-4">
           <input

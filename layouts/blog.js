@@ -63,7 +63,7 @@ export default function BlogLayout({ children, frontMatter }) {
     >
       <SRLWrapper options={options}>
         <article className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-16 md:px-4">
-          <h1 className="w-full max-w-2xl px-4 mx-auto mb-4 font-serif text-3xl font-bold tracking-tight text-left text-black lg:pr-24 md:text-5xl dark:text-white">
+          <h1 className="w-full max-w-2xl px-4 mx-auto mb-4 font-sans text-3xl font-bold tracking-tight text-left text-black lg:pr-24 md:text-5xl dark:text-white">
             {frontMatter.title}
           </h1>
           <h2 className="w-full max-w-2xl px-4 mx-auto mb-4 font-sans text-xl text-left text-black md:text-2xl dark:text-white">
@@ -74,7 +74,7 @@ export default function BlogLayout({ children, frontMatter }) {
             <div className="flex items-center">
               <p className="text-base text-gray-700 dark:text-gray-300">
                 <time className="capitalize font-caption">
-                  {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy', {
+                  {format(parseISO(frontMatter.publishedAt), 'MMMM, yyyy', {
                     locale: es
                   })}
                 </time>

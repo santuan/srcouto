@@ -233,11 +233,10 @@ export default function Timeline() {
             href="https://www.behance.net/mfetchegaray"
           >
             mfetchegaray
-          </a>{' '}
-          por para el DJ Fede Schrager
+          </a>
           <div className="mt-3">
             <div className="inline-block pr-2 mr-2 font-sans text-base font-bold text-gray-900 dark:text-white">
-              Wordpress
+              HTML & CSS
             </div>
           </div>
         </Step>
