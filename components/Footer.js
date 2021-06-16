@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-8">
       <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
       <div className="grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 text-center sm:grid-cols-2">
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-5">
           <Link href="/">
             <a className="text-gray-700 transition hover:text-gray-300">
               Inicio
