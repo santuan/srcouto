@@ -17,9 +17,9 @@ export default function Blog({ posts }) {
         <h1 className="px-4 mb-4 font-serif text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Proyectos
         </h1>
-        <p className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
+        <h2 className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
           Rincones en la web donde participo de manera activa.
-        </p>
+        </h2>
         <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
         {filteredProjectPosts.map((frontMatter) => (
           <ProjectPost key={frontMatter.title} {...frontMatter} />
