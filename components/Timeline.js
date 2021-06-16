@@ -107,7 +107,10 @@ export default function Timeline() {
             </div>
           </div>
         </Step>
-        <Step title="Germinación del Camino">
+        <Step
+          title="Germinación del Camino"
+          link="https://germinacion.netlify.app/"
+        >
           App para facilitar el acceso a la información y se busca enfatizar las
           virtudes de las plantas por sobre las dolencias a las que pueden ser
           de utilidad.
