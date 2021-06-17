@@ -20,7 +20,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Santiago Rodriguez Couto',
+    title: 'Santiago Rodríguez Couto',
     description: `Desarrollador y diseñador de páginas web.`,
     image: 'https://srcouto.vercel.app/static/images/banner.png',
     type: 'website',
