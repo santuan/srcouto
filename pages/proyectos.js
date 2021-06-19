@@ -1,9 +1,9 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
-import Heading from '@/components/Typography/Heading';
-import ProjectItem from '@/components/Project/ProjectItem';
-import Timeline from '@/components/Timeline/Timeline';
+import Heading from '@/components/Heading';
+import ProjectItem from '@/components/Bio/ProjectItem';
+import Timeline from '@/components/Bio/Timeline';
 
 export default function Blog({ posts }) {
   const filteredProjects = posts.sort(

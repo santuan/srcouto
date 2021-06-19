@@ -3,8 +3,8 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
 import BlogItem from '@/components/BlogItem';
-import Heading from '@/components/Typography/Heading';
-import SubHeading from '@/components/Typography/SubHeading';
+import Heading from '@/components/Heading';
+import SubHeading from '@/components/SubHeading';
 import FeaturedPost from '@/components/FeaturedPost';
 
 export default function Blog({ posts }) {

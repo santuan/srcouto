@@ -3,7 +3,7 @@ import { parseISO, format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { SRLWrapper } from 'simple-react-lightbox';
 import Container from '@/components/Container';
-import Heading from '@/components/Typography/Heading';
+import Heading from '@/components/Heading';
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
@@ -18,7 +18,7 @@ export default function BlogLayout({ children, frontMatter }) {
         <article className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-16 md:px-4">
           <div className="w-full max-w-2xl mx-auto">
             <Heading title={frontMatter.title} subtitle={frontMatter.summary} />
-            <div className="flex items-center w-full max-w-2xl px-4 mx-auto mb-6 md:justify-between">
+            <div className="flex items-center w-full max-w-2xl px-4 mx-auto my-3 md:justify-between">
               <div className="flex items-center">
                 <p className="text-base text-gray-700 dark:text-gray-300">
                   <time className="capitalize font-caption">
