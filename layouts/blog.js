@@ -3,7 +3,7 @@ import { parseISO, format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { SRLWrapper } from 'simple-react-lightbox';
 import Container from '@/components/Container';
-import Heading from '@/components/Heading';
+import Heading from '@/components/Plugs/Heading';
 
 export default function BlogLayout({ children, frontMatter }) {
   return (

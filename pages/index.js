@@ -1,6 +1,6 @@
 import Container from '../components/Container';
-import BlogItem from '../components/BlogItem';
-import SubHeading from '@/components/SubHeading';
+import BlogItem from '../components/Plugs/BlogItem';
+import SubHeading from '@/components/Plugs/SubHeading';
 import styles from '@/styles/Container.module.css';
 import PageLink from 'next/link';
 

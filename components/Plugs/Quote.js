@@ -1,5 +1,5 @@
 // import styles from './Heading.module.css';
-import styles from './BlogPost.module.css';
+import styles from './Quote.module.css';
 
 const Quote = ({ title, children }) => {
   return (

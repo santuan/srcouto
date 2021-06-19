@@ -1,6 +1,6 @@
 import styles from "@/styles/Featured.module.css"
-import BlogItem from '@/components/BlogItem';
-import SubHeading from '@/components/SubHeading';
+import BlogItem from '@/components/Plugs/BlogItem';
+import SubHeading from '@/components/Plugs/SubHeading';
 
 const FeaturedContainer = ({ title }) => {
   return (

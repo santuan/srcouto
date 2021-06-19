@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SubHeading from '../SubHeading';
+import SubHeading from '@/components/Plugs/SubHeading';
 import { FiChevronsRight } from 'react-icons/fi';
 
 const Divider = () => {

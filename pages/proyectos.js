@@ -1,7 +1,7 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
-import Heading from '@/components/Heading';
+import Heading from '@/components/Plugs/Heading';
 import ProjectItem from '@/components/Bio/ProjectItem';
 import Timeline from '@/components/Bio/Timeline';
 

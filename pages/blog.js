@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
-import BlogItem from '@/components/BlogItem';
-import Heading from '@/components/Heading';
-import SubHeading from '@/components/SubHeading';
-import FeaturedPost from '@/components/FeaturedPost';
+import FeaturedPost from '@/components/Plugs/FeaturedPost';
+import BlogItem from '@/components/Plugs/BlogItem';
+import Heading from '@/components/Plugs/Heading';
+import SubHeading from '@/components/Plugs/SubHeading';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
