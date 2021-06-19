@@ -1,0 +1,23 @@
+.Container {
+  @apply relative w-full px-4 mb-8 text-gray-800;
+}
+
+:global(.dark) .Container {
+  @apply text-gray-100;
+}
+
+.Title {
+  @apply w-full pr-12 mb-2 font-sans text-2xl font-bold md:text-3xl;
+}
+
+.Description {
+  @apply pr-0 md:mr-24;
+}
+
+.Container a {
+  @apply absolute top-0 right-0 border-b hover:text-gray-700;
+}
+
+:global(.dark) .Container a {
+  @apply text-white hover:text-gray-300;
+}

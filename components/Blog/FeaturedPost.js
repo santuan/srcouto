@@ -1,21 +1,20 @@
-import SubHeading from '@/components/Typography/SubHeading';
-import BlogPost from '@/components/BlogPost';
+import styles from "@/styles/Featured.module.css"
+import BlogItem from '@/components/Blog/BlogItem';
 
-const FeaturedPost = ({ title }) => {
+const FeaturedContainer = ({ title }) => {
   return (
-    <div className="w-full">
-      <SubHeading title={title} />
-      <BlogPost
+    <div className={styles.Container}>
+      <BlogItem
         title="El diseño centrado en las personas"
         summary="Ser considerado a la hora de resolver problemas."
         slug="el-diseno-centrado-en-las-personas"
       />
-      <BlogPost
+      <BlogItem
         title="De la industria textil a la Luna"
         summary="La ciudad de Huntsville Alabama."
         slug="de-la-industria-textil-a-la-luna"
       />
-      <BlogPost
+      <BlogItem
         title="La comunicación más corta de la historia"
         summary="Sobre el complejo significado de dos simples caracteres."
         slug="la-comunicacion-mas-corta-de-la-historia"
@@ -24,4 +23,4 @@ const FeaturedPost = ({ title }) => {
   );
 };
 
-export default FeaturedPost;
+export default FeaturedContainer;

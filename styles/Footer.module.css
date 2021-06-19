@@ -1,0 +1,22 @@
+.Footer {
+  @apply flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-8;
+}
+
+:global(.dark) .Footer {
+}
+
+.Divider {
+  @apply w-full mb-8 border border-gray-200;
+}
+
+:global(.dark) .Divider {
+  @apply border-gray-800;
+}
+
+.Grid {
+@apply grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 text-center sm:grid-cols-2;
+}
+
+.GridItem {
+  @apply flex flex-col space-y-4;
+}

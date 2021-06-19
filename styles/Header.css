@@ -14,7 +14,7 @@
   right: 0;
   z-index: 999;
   position: fixed !important;
-  transition: all 420ms ease-in-out;
+  transition: all 800ms ease-in-out;
 }
 
 .headroom--scrolled {

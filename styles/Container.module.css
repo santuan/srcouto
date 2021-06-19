@@ -1,0 +1,38 @@
+.AppContainer {
+  @apply bg-gray-100;
+}
+
+:global(.dark) .AppContainer {
+  @apply bg-gray-900;
+}
+
+.PageContainer {
+  @apply flex flex-col items-start justify-center w-full max-w-full mx-auto mb-16 lg:max-w-2xl;
+}
+
+.Title {
+  @apply px-4 mb-4 font-sans text-4xl font-bold tracking-tight text-black md:text-4xl;
+}
+:global(.dark) .Title {
+  @apply text-white;
+}
+
+.Subtitle {
+  @apply relative block px-4 mb-6 font-sans text-xl text-gray-600;
+}
+
+:global(.dark) .Subtitle {
+  @apply text-gray-400;
+}
+
+.Subtitle a {
+  @apply inline-block mx-1 text-blue-500 underline hover:text-blue-600;
+}
+
+.Divider {
+  @apply w-full border-t border-gray-200;
+}
+
+:global(.dark) .Divider {
+  @apply border-gray-800
+}

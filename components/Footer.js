@@ -1,44 +1,32 @@
 import Link from 'next/link';
+import styles from '@/styles/Footer.module.css';
 
 const ExternalLink = ({ href, children }) => (
-  <a
-    className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
+  <a target="_blank" rel="noopener noreferrer" href={href}>
     {children}
   </a>
 );
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-8">
-      <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
-      <div className="grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 text-center sm:grid-cols-2">
-        <div className="flex flex-col space-y-4">
+    <footer className={styles.Footer}>
+      <hr className={styles.Divider} />
+      <div className={styles.Grid}>
+        <div className={styles.GridItem}>
           <Link href="/">
-            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
-              Inicio
-            </a>
+            <a>Inicio</a>
           </Link>
           <Link href="/blog">
-            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
-              Blog
-            </a>
+            <a>Blog</a>
           </Link>
           <Link href="/proyectos">
-            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
-              Proyectos
-            </a>
+            <a>Proyectos</a>
           </Link>
           <Link href="/contacto">
-            <a className="text-gray-700 transition hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200">
-              Contacto
-            </a>
+            <a>Contacto</a>
           </Link>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className={styles.GridItem}>
           <ExternalLink href="https://twitter.com/santuuan">
             Twitter
           </ExternalLink>

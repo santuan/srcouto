@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import Container from '@/components/Container';
-import BlogPost from '@/components/BlogPost';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
+import styles from '@/styles/Container.module.css';
+import Container from '@/components/Container';
+import BlogItem from '@/components/Blog/BlogItem';
+import Heading from '@/components/Typography/Heading';
 import SubHeading from '@/components/Typography/SubHeading';
-import FeaturedPost from '@/components/Typography/Featured';
+import FeaturedPost from '@/components/Blog/Featured';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
@@ -15,22 +17,14 @@ export default function Blog({ posts }) {
     .filter((frontMatter) =>
       frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
     );
+
   return (
     <Container
       title="Blog | Santiago Couto"
       description="Artículos en Inglés buscando su sentido en el Español. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
-      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="px-4 mb-4 font-serif text-4xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-          Blog
-        </h1>
-
-        <h2 className="px-4 mb-6 text-xl text-gray-600 dark:text-gray-400">
-          Artículos en Inglés traducidos al Español. Historias y recursos que se
-          relacionan con el mundo del diseño, la programación y el software
-          libre.
-        </h2>
-
+      <div className={styles.PageContainer}>
+        <Heading title="Blog" subtitle="Artículos en Inglés traducidos al Español. Historias y recursos que se relacionan con el mundo del diseño, la programación y el software libre." />
         <div className="relative w-full px-3 mb-4">
           <input
             aria-label="Search articles"
@@ -70,7 +64,7 @@ export default function Blog({ posts }) {
           </p>
         )}
         {filteredBlogPosts.map((frontMatter) => (
-          <BlogPost key={frontMatter.title} {...frontMatter} />
+          <BlogItem key={frontMatter.title} {...frontMatter} />
         ))}
       </div>
     </Container>

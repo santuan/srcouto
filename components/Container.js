@@ -3,12 +3,13 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
-import Offcanvas from '@/components/Offcanvas';
+import Offcanvas from '@/components/Offcanvas/Offcanvas';
 import Footer from '@/components/Footer';
 import Headroom from 'react-headroom';
 import { motion } from 'framer-motion';
-import { HiOutlineLightBulb, HiLightBulb } from 'react-icons/hi';
+import { HiLightBulb } from 'react-icons/hi';
 import { MdLightbulbOutline } from 'react-icons/md';
+import styles from "@/styles/Container.module.css"
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
@@ -28,7 +29,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className={styles.AppContainer}>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="index, follow" />
