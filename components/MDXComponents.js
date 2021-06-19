@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImageWithTheme from '@/components/ImageTheme';
+import ImageCaption from '@/components/ImageCaption';
+import Youtube from '@/components/Youtube'
+import Quote from '@/components/Quote'
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -17,7 +19,9 @@ const CustomLink = (props) => {
 
 const MDXComponents = {
   Image,
-  ImageWithTheme,
+  ImageCaption,
+  Youtube,
+  Quote,
   a: CustomLink
 };
 

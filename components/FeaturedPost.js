@@ -1,8 +1,11 @@
 import styles from "@/styles/Featured.module.css"
-import BlogItem from '@/components/Blog/BlogItem';
+import BlogItem from '@/components/BlogItem';
+import SubHeading from '@/components/Typography/SubHeading';
 
 const FeaturedContainer = ({ title }) => {
   return (
+    <>
+    <SubHeading title={title} />
     <div className={styles.Container}>
       <BlogItem
         title="El diseño centrado en las personas"
@@ -20,6 +23,7 @@ const FeaturedContainer = ({ title }) => {
         slug="la-comunicacion-mas-corta-de-la-historia"
       />
     </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ const BlogPost = ({ title, description, link }) => {
   return (
     <Fade duration={1750} delay={500}>
       <div className={styles.Container}>
-        <h4 className={styles.Title}>{title}</h4>
+        <h3 className={styles.Title}>{title}</h3>
         <p className={styles.Description}>{description}</p>
         <a href={link} target="_blank" rel="noopener noreferrer">
           Ir a la web

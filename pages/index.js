@@ -1,5 +1,5 @@
 import Container from '../components/Container';
-import BlogItem from '../components/Blog/BlogItem';
+import BlogItem from '../components/BlogItem';
 import SubHeading from '@/components/Typography/SubHeading';
 import styles from '@/styles/Container.module.css';
 import PageLink from 'next/link';

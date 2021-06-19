@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
-import BlogItem from '@/components/Blog/BlogItem';
+import BlogItem from '@/components/BlogItem';
 import Heading from '@/components/Typography/Heading';
 import SubHeading from '@/components/Typography/SubHeading';
-import FeaturedPost from '@/components/Blog/Featured';
+import FeaturedPost from '@/components/FeaturedPost';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
@@ -25,7 +25,23 @@ export default function Blog({ posts }) {
     >
       <div className={styles.PageContainer}>
         <Heading title="Blog" subtitle="Artículos en Inglés traducidos al Español. Historias y recursos que se relacionan con el mundo del diseño, la programación y el software libre." />
-        <div className="relative w-full px-3 mb-4">
+        
+
+        {!searchValue && (
+          <>
+            <FeaturedPost title="Textos Recomendados" />
+          </>
+        )}
+        <SubHeading title="Todas las entradas" />
+        {!filteredBlogPosts.length && (
+          <p className="mb-4 text-gray-600 dark:text-gray-400">
+            No hubo resultados a su búsqueda.
+          </p>
+        )}
+        {filteredBlogPosts.map((frontMatter) => (
+          <BlogItem key={frontMatter.title} {...frontMatter} />
+        ))}
+        <div className="relative w-full px-3 my-6">
           <input
             aria-label="Search articles"
             type="text"
@@ -51,21 +67,6 @@ export default function Blog({ posts }) {
             {posts.length} artículos
           </div>
         </div>
-
-        {!searchValue && (
-          <>
-            <FeaturedPost title="Textos Recomendados" />
-          </>
-        )}
-        <SubHeading title="Todas las entradas" />
-        {!filteredBlogPosts.length && (
-          <p className="mb-4 text-gray-600 dark:text-gray-400">
-            No hubo resultados a su búsqueda.
-          </p>
-        )}
-        {filteredBlogPosts.map((frontMatter) => (
-          <BlogItem key={frontMatter.title} {...frontMatter} />
-        ))}
       </div>
     </Container>
   );

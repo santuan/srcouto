@@ -22,3 +22,15 @@
 :global(.dark) .Description {
   @apply text-gray-300;
 }
+
+.Quote {
+  @apply pb-2 pr-4 text-lg text-gray-900 md:text-xl;
+}
+
+:global(.dark) .Quote {
+  @apply text-gray-300 -translate-x-4;
+}
+
+:global(.dark) .Quote h1 {
+  @apply text-gray-300;
+}
