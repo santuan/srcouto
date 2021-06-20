@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import ImageCaption from '@/components/ImageCaption';
+import ImageCaption from '@/components/Plugs/ImageCaption';
 import Youtube from '@/components/Plugs/Youtube'
 import Quote from '@/components/Plugs/Quote'
 

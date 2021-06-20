@@ -22,7 +22,7 @@ export default function Home() {
           y rincones en la web.
         </h2>
         <hr className={styles.Divider} />
-        <SubHeading title="Entradas recomendadas" arrows={true} />
+        <SubHeading title="Entradas recomendadas"/>
         <BlogItem
           title="El diseño centrado en las personas"
           summary="Ser considerado a la hora de resolver problemas."

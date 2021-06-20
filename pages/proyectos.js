@@ -2,7 +2,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 import styles from '@/styles/Container.module.css';
 import Container from '@/components/Container';
 import Heading from '@/components/Plugs/Heading';
-import ProjectItem from '@/components/Bio/ProjectItem';
+import ProjectItems from '@/components/Bio/ProjectItem';
 import Timeline from '@/components/Bio/Timeline';
 
 export default function Blog({ posts }) {
@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
           subtitle="Rincones en la web donde participo de manera activa."
         />
         {filteredProjects.map((frontMatter) => (
-          <ProjectItem key={frontMatter.title} {...frontMatter} />
+          <ProjectItems key={frontMatter.title} {...frontMatter} />
         ))}
         <Timeline />
       </div>

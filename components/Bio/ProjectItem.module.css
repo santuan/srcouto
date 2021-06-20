@@ -1,5 +1,5 @@
 .Container {
-  @apply relative w-full px-4 mb-8 text-gray-800;
+  @apply relative w-full px-4 mt-6 mb-8 text-gray-800;
 }
 
 :global(.dark) .Container {
@@ -11,11 +11,11 @@
 }
 
 .Description {
-  @apply pr-0 md:mr-24;
+  @apply pr-0 md:mr-40;
 }
 
 .Container a {
-  @apply absolute top-0 right-0 border-b hover:text-gray-700;
+  @apply absolute right-0 border-b top-2 hover:text-gray-700;
 }
 
 :global(.dark) .Container a {

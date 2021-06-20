@@ -1,4 +1,4 @@
-import styles from "@/styles/Featured.module.css"
+import styles from "@/components/Plugs/FeaturedPost.module.css"
 import BlogItem from '@/components/Plugs/BlogItem';
 import SubHeading from '@/components/Plugs/SubHeading';
 
