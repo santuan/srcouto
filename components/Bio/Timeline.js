@@ -61,7 +61,7 @@ const BigStep = ({ children }) => {
 
 const Step = ({ title, children }) => {
   return (
-    <li className="relative w-full pt-12 pb-16 mx-4 border-t border-gray-300 md:py-12 dark:border-gray-700">
+    <li className="relative w-full pt-12 pb-16 border-t border-gray-300 md:mx-4 md:py-12 dark:border-gray-700">
       <div className="flex items-start mb-2 text-gray-700 dark:text-gray-300">
         <FiChevronsRight className="relative top-1.5" />
         <div
