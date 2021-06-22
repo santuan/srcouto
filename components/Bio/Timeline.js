@@ -56,14 +56,10 @@ const ProjectsLinks = ({ portfolioLink, webLink }) => {
 };
 
 const BigStep = ({ children }) => {
-  return (
-    <ul className="w-full">
-      {children}
-    </ul>
-  );
+  return <ul className="w-full">{children}</ul>;
 };
 
-const Step = ({ title,  children }) => {
+const Step = ({ title, children }) => {
   return (
     <li className="relative w-full pt-12 pb-16 mx-4 border-t border-gray-300 md:py-12 dark:border-gray-700">
       <div className="flex items-start mb-2 text-gray-700 dark:text-gray-300">
@@ -97,7 +93,7 @@ export default function Timeline() {
       <SubHeading title="Páginas web realizadas" />
       <Year>2021</Year>
       <BigStep>
-        <Step title="Santuan" link="https://www.santuan.com.ar/">
+        <Step title="Santuan">
           Versión experimental utilizando el mismo contenido de este sitio pero
           con un impronta más visual.
           <Techs>
@@ -106,13 +102,11 @@ export default function Timeline() {
             <TechsItem title="Contentful" />
             <TechsItem title="Netlify" />
           </Techs>
+          <ProjectsLinks webLink="https://www.santuan.com.ar/" />
         </Step>
       </BigStep>
       <BigStep>
-        <Step
-          title="Bomberos Voluntarios Luján de Cuyo"
-          link="https://bomberoslujandecuyo.org.ar/"
-        >
+        <Step title="Bomberos Voluntarios Luján de Cuyo">
           El Cuerpo de Bomberos Voluntarios de Luján fue fundado el 5 de Agosto
           de 1968, por un grupo de vecinos comerciantes del departamento.
           <ProjectsLinks
@@ -128,10 +122,7 @@ export default function Timeline() {
         </Step>
       </BigStep>
       <BigStep>
-        <Step
-          title="Centro de Estudios Ajmátova"
-          link="https://www.centroestudiosajmatova.com.ar/"
-        >
+        <Step title="Centro de Estudios Ajmátova">
           La enseñanza de los matices lingüísticos y la gramática del Español
           inmersos en las culturas Latinoamericana y Rusa.
           <Techs>
@@ -149,7 +140,7 @@ export default function Timeline() {
       <Divider />
       <Year>2020</Year>
       <BigStep>
-        <Step title="Sol Etchegaray" link="https://www.soletchegaray.com.ar/">
+        <Step title="Sol Etchegaray">
           Web de fotografía donde se busca naturalizar el cuerpo desnudo y
           visibilizar la diversidad de los cuerpos, captando los detalles tan
           bellos y únicos que nos caracterizan.
@@ -164,7 +155,7 @@ export default function Timeline() {
             webLink="https://www.soletchegaray.com.ar/"
           />
         </Step>
-        <Step title="Cucha Estudio" link="https://www.cuchaestudio.com/">
+        <Step title="Cucha Estudio">
           Desarrollo del sitio web para Cucha, un estudio de diseño con base en
           Barcelona, España. especializado en diseños de marcas, editorial y
           redes sociales.
@@ -179,10 +170,7 @@ export default function Timeline() {
             webLink="https://www.cuchaestudio.com/"
           />
         </Step>
-        <Step
-          title="Germinación del Camino"
-          link="https://germinacion.netlify.app/"
-        >
+        <Step title="Germinación del Camino">
           App para facilitar el acceso a la información y se busca enfatizar las
           virtudes de las plantas por sobre las dolencias a las que pueden ser
           de utilidad.
@@ -197,10 +185,7 @@ export default function Timeline() {
             webLink="https://germinacion.netlify.app/"
           />
         </Step>
-        <Step
-          title="Alan Sutton"
-          link="https://www.alansutton.com.ar/biografia/"
-        >
+        <Step title="Alan Sutton">
           Sitio web realizado adaptando la imagen y el diseño utilizado para el
           lanzamiento del disco La Era del Rivotril.
           <Techs>
@@ -211,7 +196,7 @@ export default function Timeline() {
             webLink="https://www.alansutton.com.ar/biografia/"
           />
         </Step>
-        <Step title="Estudio Luis Romero" link="https://estudioluisromero.com/">
+        <Step title="Estudio Luis Romero">
           Sitio web para el director de teatro Luis Romero
           <Techs>
             <TechsItem title="Wordpress" />
@@ -221,10 +206,7 @@ export default function Timeline() {
             webLink="https://estudioluisromero.com/"
           />
         </Step>
-        <Step
-          title="Afda - Libre de VIolencias"
-          link="https://www.afda.org.ar/libre-de-violencias/"
-        >
+        <Step title="Afda - Libre de VIolencias">
           Sitio web para la Asociación Familias Diversas de Argentina sobre
           violencias y derechos sexuales.
           <Techs>
@@ -239,7 +221,7 @@ export default function Timeline() {
       <Divider />
       <Year>2019</Year>
       <BigStep>
-        <Step title="Madejandola" link="http://madejandola.com/">
+        <Step title="Madejandola">
           Un universo repleto de historias que nacen en los hilos de América
           Latina.
           <Techs>
@@ -250,7 +232,7 @@ export default function Timeline() {
             webLink="http://madejandola.com/"
           />
         </Step>
-        <Step title="Fede Schrager" link="http://fedeschrager.com.ar/">
+        <Step title="Fede Schrager">
           Maquetado de sitio web basado en el gran diseño de{' '}
           <a
             className="underline"
@@ -270,7 +252,7 @@ export default function Timeline() {
       <Divider />
       <Year>2018</Year>
       <BigStep>
-        <Step title="Jibsa" link="http://jibsa.com.ar/">
+        <Step title="Jibsa">
           Una empresa comprometida con la preservación del patrimonio
           arquitectónico, la seguridad edilicia y las buenas formas
           empresariales.
@@ -282,10 +264,7 @@ export default function Timeline() {
             webLink="http://jibsa.com.ar/"
           />
         </Step>
-        <Step
-          title="Clinicas Colectivas"
-          link="https://clinicascolectivas.github.io/"
-        >
+        <Step title="Clinicas Colectivas">
           Las Clínicas Colectivas de Artes Visuales es un proyecto que comenzó
           en el año 2013 con el objetivo de reunir y convocar artistas de la
           zona de la Comarca Andina del Paralelo 42.
@@ -301,30 +280,7 @@ export default function Timeline() {
       </BigStep>
 
       <Divider />
-      <Year>2017</Year>
-      <BigStep>
-        <Step
-          title="Saraña Huwitaqui"
-          link="https://www.instagram.com/saranahuwitaqui/"
-        >
-          Un proyecto de Recreación, “Caminando Nuestra Bonita Tierra”.
-          <Techs>
-            <TechsItem title="Logo" />
-          </Techs>
-        </Step>
-        <Step
-          title="Vecinal del Paraje Entre Rios"
-          link="https://www.vecinaldelparaje.com.ar/"
-        >
-          Vecinos y vecinas que nos juntamos a participar de esto llamado
-          convivir.
-          <Techs>
-            <TechsItem title="Jekyll" />
-            <TechsItem title="Github Pages" />
-          </Techs>
-          <ProjectsLinks webLink="https://clinicascolectivas.github.io/" />
-        </Step>
-      </BigStep>
+      
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
