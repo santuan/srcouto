@@ -30,7 +30,7 @@ const TechsItem = ({ title }) => {
 
 const ProjectsLinks = ({ portfolioLink, webLink }) => {
   return (
-    <div className="absolute right-0 flex justify-start space-x-6 border-gray-400 left-8 md:left-auto md:space-x-3 bottom-2 md:bottom-12 borber-b ">
+    <div className="absolute bottom-0 right-0 flex justify-start space-x-6 border-gray-400 left-8 md:left-auto md:space-x-3 md:bottom-12 borber-b ">
       {portfolioLink && (
         <a
           target="_blank"
