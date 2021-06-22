@@ -31,16 +31,6 @@ const TechsItem = ({ title }) => {
 const ProjectsLinks = ({ portfolioLink, webLink }) => {
   return (
     <div className="absolute bottom-0 right-0 flex justify-start space-x-6 border-gray-400 left-8 md:left-auto md:space-x-3 md:bottom-12 borber-b ">
-      {portfolioLink && (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pb-1 text-base font-bold text-gray-800 border-b-2 border-blue-500 md:text-sm hover:text-blue-500 dark:hover:text-blue-500 dark:border-blue-500 dark:text-white"
-          href={portfolioLink}
-        >
-          Ver portfolio
-        </a>
-      )}
       {webLink && (
         <a
           target="_blank"
@@ -49,6 +39,16 @@ const ProjectsLinks = ({ portfolioLink, webLink }) => {
           href={webLink}
         >
           Visitar web
+        </a>
+      )}
+      {portfolioLink && (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pb-1 text-base font-bold text-gray-800 border-b-2 border-blue-500 md:text-sm hover:text-blue-500 dark:hover:text-blue-500 dark:border-blue-500 dark:text-white"
+          href={portfolioLink}
+        >
+          Ver portfolio
         </a>
       )}
     </div>
@@ -280,7 +280,7 @@ export default function Timeline() {
       </BigStep>
 
       <Divider />
-      
+
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
