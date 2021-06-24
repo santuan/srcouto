@@ -1,7 +1,6 @@
 .Container {
-  @apply w-full px-4 py-6 font-sans duration-300 border-t border-b border-gray-200 opacity-90 hover:border-blue-500 hover:shadow-lg hover:opacity-100;
+  @apply relative w-full px-4 py-6 font-sans duration-300 border-t border-b border-gray-200 opacity-90 hover:border-blue-500 hover:shadow-lg hover:opacity-100;
 }
-
 
 :global(.dark) .Container {
   @apply border-gray-800 opacity-60 hover:border-blue-500 hover:shadow-lg hover:opacity-100;
@@ -12,6 +11,14 @@
 }
 
 :global(.dark) .Title {
+  @apply text-gray-100;
+}
+
+.Icon {
+  @apply absolute top-0 right-0 mx-3 text-2xl font-bold text-gray-900 mt-7 opacity-80;
+}
+
+:global(.dark) .Icon {
   @apply text-gray-100;
 }
 
