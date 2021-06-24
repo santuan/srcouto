@@ -16,6 +16,7 @@ const FeaturedContainer = ({ title }) => {
         title="De la industria textil a la Luna"
         summary="La ciudad de Huntsville Alabama."
         slug="de-la-industria-textil-a-la-luna"
+        audio={true}
       />
       <BlogItem
         title="La comunicación más corta de la historia"
