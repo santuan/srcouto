@@ -18,14 +18,14 @@ const Year = ({ children }) => {
 
 const Techs = ({ children }) => {
   return (
-    <ul className="flex mt-3 space-x-3 font-sans text-base font-bold text-gray-900 dark:text-white">
+    <div className="flex mt-3 space-x-3 font-sans text-base font-bold text-gray-900 dark:text-white">
       {children}
-    </ul>
+    </div>
   );
 };
 
 const TechsItem = ({ title }) => {
-  return <li>{title}</li>;
+  return <div>{title}</div>;
 };
 
 const ProjectsLinks = ({ portfolioLink, webLink }) => {
@@ -56,12 +56,12 @@ const ProjectsLinks = ({ portfolioLink, webLink }) => {
 };
 
 const BigStep = ({ children }) => {
-  return <ul className="w-full">{children}</ul>;
+  return <div className="w-full">{children}</div>;
 };
 
 const Step = ({ title, children }) => {
   return (
-    <li className="relative w-full pt-12 pb-16 border-t border-gray-300 md:mx-4 md:py-12 dark:border-gray-700">
+    <div className="relative w-full pt-12 pb-16 border-t border-gray-300 md:mx-4 md:py-12 dark:border-gray-700">
       <div className="flex items-start mb-2 text-gray-700 dark:text-gray-300">
         <FiChevronsRight className="relative top-1.5" />
         <div
@@ -71,8 +71,8 @@ const Step = ({ title, children }) => {
           {title}
         </div>
       </div>
-      <p className="ml-8 text-gray-700 dark:text-gray-400">{children}</p>
-    </li>
+      <div className="ml-8 text-gray-700 dark:text-gray-400">{children}</div>
+    </div>
   );
 };
 

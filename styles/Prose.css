@@ -123,3 +123,7 @@
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
 }
+
+.prose audio {
+  @apply sticky z-50 top-12;
+}
