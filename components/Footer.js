@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '@/styles/Footer.module.css';
+import Stn from '@/components/Bio/Trinomia';
 
 const ExternalLink = ({ href, children }) => (
   <a target="_blank" rel="noopener noreferrer" href={href}>
@@ -34,6 +35,7 @@ export default function Footer() {
           <ExternalLink href="https://www.linkedin.com/in/santuan/">
             Linkedin
           </ExternalLink>
+        <Stn />
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import Headroom from 'react-headroom';
 import { motion } from 'framer-motion';
 import { HiLightBulb } from 'react-icons/hi';
 import { MdLightbulbOutline } from 'react-icons/md';
-import styles from "@/styles/Container.module.css"
+import styles from '@/styles/Container.module.css';
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);

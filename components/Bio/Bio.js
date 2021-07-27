@@ -1,10 +1,9 @@
 const Bio = () => {
   return (
     <>
-      <div className="px-4 prose-xl prose-blue hyphens">
-        <h1>Sobre mi</h1>
+      <div className="px-4 prose-xl text-justify prose-yellow hyphens">
         <p>
-          Estudié durante más de 7 años la carrera de diseño gráfico en la
+          Estudié la carrera de diseño gráfico en la
           Universidad de Buenos Aires. Paralelamente me fui dedicando cada vez
           más a investigar las herramientas y conocimientos que la comunidad de
           software libre ofrece de manera gratuita. Implemento ambas tecnologías
@@ -20,20 +19,12 @@ const Bio = () => {
           >
             cooparaje.com.ar
           </a>
-          , donde voy subiendo recursos y herramientas gratuitas que amigas y
+          . Una web donde voy subiendo recursos y herramientas gratuitas que amigas y
           amigos me van compartiendo y pueden aplicarse a todo tipo de espacios.
         </p>
         <p>
-          Tanto esta web como muchos de los sitios web que realizo tienen la
-          particularidad de tener un costo de mantenimiento de $0. Si que
-          normalmente tener un dominio personal suma y eso inevitablemente tiene
-          que abonarse anualmente (ya sea un .com.ar o un .com).
-        </p>
-        <p>
           La mayoría de los sitios pueden realizarse implementando las mejores
-          herramientas de programación usando su plan gratuito (algo así como
-          usar una red social gratis a cambio de dar nuestra información y
-          atención). Cada uno de estos servicios cuentan con un plan con sus
+          herramientas de programación usando su plan gratuito. Cada uno de estos servicios cuentan con un plan con sus
           respectivos limitantes pero que en su mayoria suelen ser más de lo
           necesario para arrancar a una menor escala.
         </p>
@@ -43,7 +34,7 @@ const Bio = () => {
           podés sentirte libre de contactarte y trataré de colaborar dentro de
           las posibilidades.
         </p>
-        <p>Y desde ya, muchas gracias por su atención</p>
+        <p className="text-center duration-300 opacity-70 hover:opacity-100">Y desde ya, muchas gracias por su atención</p>
       </div>
     </>
   );

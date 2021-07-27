@@ -1,5 +1,5 @@
 .Footer {
-  @apply flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-8;
+  @apply relative flex flex-col items-start justify-center w-full max-w-full py-24 mx-auto overflow-hidden;
 }
 
 :global(.dark) .Footer {
@@ -14,7 +14,7 @@
 }
 
 .Grid {
-@apply grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 text-center sm:grid-cols-2;
+@apply grid w-full max-w-3xl grid-cols-1 gap-4 pb-16 mx-auto text-center sm:grid-cols-2;
 }
 
 .GridItem {
