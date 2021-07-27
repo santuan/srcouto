@@ -41,10 +41,10 @@ export default function Trinomia() {
           setTimeout(() => setIsCopied(false), 3000);
         }}
         className={
-          'relative flex justify-center items-center flex-col mt-1 mx-2 rounded-md pb-1 font-bold font-sans text-white  transform duration-700 ' +
+          'relative flex justify-center items-center flex-col mt-1 mx-2 rounded-md pb-1 font-bold font-sans dark:text-white text-gray-800  transform duration-700 ' +
           (isCopied
             ? '' + isCopied
-            : 'hover:bg-gray-900 bg-opacity-10')
+            : '')
         }
       >
         
