@@ -23,7 +23,7 @@ export default function Container(props) {
   const meta = {
     title: 'Santiago Rodríguez Couto',
     description: `Desarrollador y diseñador de páginas web.`,
-    image: 'https://srcouto.vercel.app/static/images/banner.png',
+    image: 'https://srcouto.ar/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
@@ -36,11 +36,11 @@ export default function Container(props) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://srcouto.vercel.app${router.asPath}`}
+          content={`https://srcouto.ar${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://srcouto.vercel.app${router.asPath}`}
+          href={`https://srcouto.ar${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Santiago Couto" />
