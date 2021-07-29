@@ -33,7 +33,7 @@ const config = {
 export default function Trinomia() {
   const [isCopied, setIsCopied] = React.useState(false);
   return (
-    <div className="flex flex-col items-center justify-center text-sm text-blue-600 duration-300 hover:translate-y-2 hover:rotate-2 group">
+    <div className="flex flex-col items-center justify-center text-sm text-blue-600 duration-300 grayscale hover:grayscale-0 hover:translate-y-2 hover:rotate-2 group">
       <button
         onClick={() => {
           copyToClipboard('https://www.santuan.com.ar/');
@@ -48,12 +48,12 @@ export default function Trinomia() {
         }
       >
         
-        <div className="flex space-x-1">
+        <div className="flex space-x-1 ">
           <BsFillCircleFill className="text-blue-500" />
           <BsSquareFill className="text-red-500" />
           <BsTriangleFill className="text-yellow-500" />
         </div>
-        <span className="mt-2">{isCopied ? '🎉 Link Copiado!' : 'Papelitos de colores'}</span>
+        <span className="mt-2">{isCopied ? '🎉 Link copiado' : 'Web a color'}</span>
         <span className="mb-2 font-sans text-xs font-bold text-gray-800 duration-300 md:opacity-0 dark:text-white group-hover:opacity-100">
           santuan.com.ar
         </span>
