@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.PageContainer}>
         <h1 className={styles.Title}>Hola, soy Santiago Rodríguez Couto</h1>
         <h2 className={styles.Subtitle}>
-          Realizó páginas web y me apasiona todo lo que tenga que ver con el
+          Realizo páginas web y me apasiona todo lo que tenga que ver con el
           mundo del software libre. Traduzco
           <PageLink href="/blog">
             <a>artículos</a>
