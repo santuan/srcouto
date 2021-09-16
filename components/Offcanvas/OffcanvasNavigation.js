@@ -7,7 +7,7 @@ const routes = [
     ariaLabel: 'Volver al inicio'
   },
   {
-    title: 'Blog',
+    title: 'Escritura',
     slug: '/blog/',
     ariaLabel: 'Ver las entradas del blog'
   },

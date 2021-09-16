@@ -15,7 +15,7 @@ export default function BlogLayout({ children, frontMatter }) {
       type="article"
     >
       <SRLWrapper options={options}>
-        <article className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-16 md:px-4">
+        <article className="flex flex-col items-start justify-center w-full max-w-6xl mx-auto mb-16 md:px-4">
           <div className="w-full max-w-2xl mx-auto">
             <Heading title={frontMatter.title} subtitle={frontMatter.summary} />
             <div className="flex items-center w-full max-w-2xl px-4 mx-auto my-3 md:justify-between">

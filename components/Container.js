@@ -108,7 +108,7 @@ export default function Container(props) {
             <div className="justify-end hidden uppercase lg:flex">
               <NextLink href="/blog">
                 <a className="p-1 font-mono text-sm font-bold text-gray-900 sm:py-4 sm:pl-6 dark:text-gray-100">
-                  Blog
+                  Escritura
                 </a>
               </NextLink>
               <NextLink href="/proyectos">
