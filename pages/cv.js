@@ -13,33 +13,38 @@ export default function CvPage() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="px-2 pt-20 pb-6 md:pt-6 print:pt-3 cvPage">
-      <Link href="/">
-        <a className="absolute top-0 left-0 theme-switch">
-          {resolvedTheme === 'dark' ? (
-            <RiHome4Line className="text-base" />
-          ) : (
-            <RiHome4Fill className="text-base" />
-          )}
-        </a>
-      </Link>
-      <button
-        aria-label="Cambiar de blanco a negro"
-        type="button"
-        className="theme-switch"
-        onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+    <div className="px-2 pt-20 pb-6 md:pt-20 print:pt-3 cvPage">
+      <div
+        className="fixed top-0 left-0 right-0 z-50 w-full h-12 bg-gradient-to-b via-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-transparent from-white dark:via-gray-900 to-transparent bg-opacity-90 dark:bg-opacity-90 print:hidden"
+        style={{ backdropFilter: 'blur(.5px)' }}
       >
-        {mounted && (
-          <div className="p-4 pr-5 text-xl text-gray-800 dark:text-gray-200">
+        <Link href="/">
+          <a className="absolute top-0 left-0 theme-switch">
             {resolvedTheme === 'dark' ? (
-              <MdLightbulbOutline />
+              <RiHome4Line className="text-base" />
             ) : (
-              <HiLightBulb />
+              <RiHome4Fill className="text-base" />
             )}
-          </div>
-        )}
-      </button>
-      <div className="relative grid w-full max-w-4xl gap-2 px-2 mx-auto md:grid-cols-5 print:grid-cols-5">
+          </a>
+        </Link>
+        <button
+          aria-label="Cambiar de blanco a negro"
+          type="button"
+          className="theme-switch"
+          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+        >
+          {mounted && (
+            <div className="p-4 pr-5 text-xl text-gray-800 dark:text-gray-200">
+              {resolvedTheme === 'dark' ? (
+                <MdLightbulbOutline />
+              ) : (
+                <HiLightBulb />
+              )}
+            </div>
+          )}
+        </button>
+      </div>
+      <div className="relative z-0 grid w-full max-w-4xl gap-2 px-2 mx-auto md:grid-cols-5 print:grid-cols-5">
         <div className="relative col-span-2 w-96 print:w-auto">
           <h1 className="relative z-10 flex flex-col font-mono text-4xl uppercase print:text-md">
             <span className="font-black">santiago</span>
@@ -71,13 +76,12 @@ export default function CvPage() {
           <div className="flex flex-col my-2 space-y-3 text-base">
             <span>33 years</span>
             <span>Buenos Aires (Argentina)</span>
-            <span>Designer {"&"} Developer</span>
+            <span>Designer {'&'} Developer</span>
           </div>
           <div className="flex flex-col my-2 space-y-3 text-base md:text-right">
             <span>www.srcouto.ar</span>
             <span>santuan.bot@gmail.com</span>
             <span></span>
-
           </div>
         </div>
       </div>
@@ -291,7 +295,7 @@ export default function CvPage() {
             <h4 className="text-sm font-bold uppercase opacity-70">
               ux/ui designer and frontend developer
             </h4>
-            <p className='pt-1 pr-12 print:pr-6'>
+            <p className="pt-1 pr-12 print:pr-6">
               Updating and enhancing the current development design process and
               user experience for the websites and applications for the
               institution.
@@ -310,7 +314,7 @@ export default function CvPage() {
             <h4 className="text-sm font-bold uppercase opacity-70">
               ux designer and frontend developer
             </h4>
-            <p className='pt-1 pr-12 print:pr-6'>
+            <p className="pt-1 pr-12 print:pr-6">
               Improve the user experience on the Digital Parliamentary System
               (made in ember.js). Enhanced the parliamentary processes from web
               to print. Create internal and external websites for the
@@ -325,8 +329,10 @@ export default function CvPage() {
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">estudio criteria</h3>
-            <h4 className="text-sm font-bold uppercase opacity-70">junior web designer</h4>
-            <p className='pt-1 pr-12 print:pr-6'>
+            <h4 className="text-sm font-bold uppercase opacity-70">
+              junior web designer
+            </h4>
+            <p className="pt-1 pr-12 print:pr-6">
               Designer and developer of corporate websites. Brand design and
               corporate brochures.
             </p>
@@ -341,8 +347,10 @@ export default function CvPage() {
             <h3 className="text-base font-black uppercase">
               revision alpha hosting
             </h3>
-            <h4 className="text-sm font-bold uppercase opacity-70">junior web designer</h4>
-            <p className='pt-1 pr-12 print:pr-6'>
+            <h4 className="text-sm font-bold uppercase opacity-70">
+              junior web designer
+            </h4>
+            <p className="pt-1 pr-12 print:pr-6">
               Designer of newsletters / Company websites. Server Technical
               support / Basic management of hosting servers.
             </p>
@@ -363,9 +371,7 @@ export default function CvPage() {
             <h3 className="text-base font-black uppercase">
               student in graphic design (uba)
             </h3>
-            <h4 className="text-base">
-              7 years and made 76,47% of the career
-            </h4>
+            <h4 className="text-base">7 years and made 76,47% of the career</h4>
             <time className="absolute top-0 right-0 italic opacity-50">
               2007 - 2014
             </time>
@@ -374,7 +380,9 @@ export default function CvPage() {
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
               tipitos argentinos{' '}
-              <i className="text-sm normal-case opacity-50 print:text-xs">by Aldo de Losa</i>
+              <i className="text-sm normal-case opacity-50 print:text-xs">
+                by Aldo de Losa
+              </i>
             </h3>
             <h4 className="text-base">Orthotypography course.</h4>
             <time className="absolute top-0 right-0 italic opacity-50">
