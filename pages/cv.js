@@ -40,13 +40,13 @@ export default function CvPage() {
         )}
       </button>
       <div className="relative grid w-full max-w-4xl gap-2 px-2 mx-auto md:grid-cols-5 print:grid-cols-5">
-        <div className="relative col-span-2 w-96">
+        <div className="relative col-span-2 w-96 print:w-auto">
           <h1 className="relative z-10 flex flex-col font-mono text-4xl uppercase print:text-md">
             <span className="font-black">santiago</span>
             <span className="font-normal">rodríguez</span>
             <span className="font-light">couto</span>
           </h1>
-          <div className="absolute top-0 right-0 z-0 font-serif tracking-tighter text-white transform scale-150 -translate-x-20 translate-y-5 opacity-90 dark:text-gray-900 text-7xl print:opacity-10">
+          <div className="absolute top-0 right-0 z-0 font-serif tracking-tighter text-white transform scale-150 -translate-x-20 translate-y-5 opacity-90 dark:text-gray-900 text-7xl print:hidden print:opacity-10">
             <span
               className="opacity-30"
               style={{ textShadow: '2px 2px #555555' }}
@@ -67,7 +67,7 @@ export default function CvPage() {
             </span>
           </div>
         </div>
-        <div className="grid flex-1 w-full col-span-3 gap-3 font-bold md:grid-cols-2 print:grid-cols-2 md:h-28">
+        <div className="grid flex-1 w-full col-span-3 gap-3 mt-3 font-bold md:grid-cols-2 print:grid-cols-2 md:h-28">
           <div className="flex flex-col my-2 space-y-3 text-base">
             <span>33 years</span>
             <span>Buenos Aires (Argentina)</span>
@@ -93,7 +93,7 @@ export default function CvPage() {
               ux and ui designer
             </h3>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>Advanced use of Adobe {'&'} Windows</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
@@ -125,19 +125,19 @@ export default function CvPage() {
               </div>
             </div>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>Accessible design approach adapted to any device.</p>
               </div>
             </div>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>Compatibility working with web standards.</p>
               </div>
             </div>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>Advanced web layout.</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
@@ -176,7 +176,7 @@ export default function CvPage() {
               frontend developer
             </h3>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>
                   Intermediate level using Linux terminal and git version
@@ -185,7 +185,7 @@ export default function CvPage() {
               </div>
             </div>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>
                   Intermediate experience creating models for headless cms and
@@ -217,7 +217,7 @@ export default function CvPage() {
             </div>
 
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>
                   Experience working with a variety of development frameworks.
@@ -247,7 +247,7 @@ export default function CvPage() {
               </div>
             </div>
             <div className="flex mt-3">
-              <span className="w-6">*</span>
+              <span className="w-6 mt-0.5 font-black">*</span>
               <div className="flex flex-col w-full">
                 <p>Deploying and optimization</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
