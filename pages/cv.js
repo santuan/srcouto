@@ -300,7 +300,7 @@ export default function CvPage() {
               user experience for the websites and applications for the
               institution.
             </p>
-            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0">
+            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0 print:z-0">
               Nov. 2018 ‒ present
               <span>public sector</span>
             </time>
@@ -316,11 +316,11 @@ export default function CvPage() {
             </h4>
             <p className="pt-1 pr-12 print:pr-6">
               Improve the user experience on the Digital Parliamentary System
-              (made in ember.js). Enhanced the parliamentary processes from web
+              . Enhanced the parliamentary processes from web
               to print. Create internal and external websites for the
               institution.
             </p>
-            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0">
+            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0 print:z-0">
               Feb. 2014 ‒ Dec. 2015
               <span>public sector</span>
             </time>
@@ -336,7 +336,7 @@ export default function CvPage() {
               Designer and developer of corporate websites. Brand design and
               corporate brochures.
             </p>
-            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0">
+            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0 print:z-0">
               Feb. 2013 ‒ Mar. 2014
               <span>private sector</span>
             </time>
@@ -354,7 +354,7 @@ export default function CvPage() {
               Designer of newsletters / Company websites. Server Technical
               support / Basic management of hosting servers.
             </p>
-            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0">
+            <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0 print:z-0">
               Feb. 2011 ‒ Mar. 2013
               <span>private sector</span>
             </time>
