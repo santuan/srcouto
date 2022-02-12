@@ -19,12 +19,16 @@
   }
 
   * {
-    @apply text-gray-900 !important;
+    @apply text-gray-900 bg-transparent !important;
   }
 
   main {
     @apply p-0 m-0 !important;
   }
+}
+
+.__react_component_tooltip {
+  @apply font-bold text-white uppercase bg-gray-900;
 }
 
 .cvPage .theme-switch {

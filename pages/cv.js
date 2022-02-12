@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes';
 import { HiLightBulb } from 'react-icons/hi';
 import { MdLightbulbOutline } from 'react-icons/md';
 import { RiHome4Fill, RiHome4Line } from 'react-icons/ri';
+import ReactTooltip from 'react-tooltip';
 
 export default function CvPage() {
   const [mounted, setMounted] = useState(false);
@@ -13,20 +14,28 @@ export default function CvPage() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="px-2 pt-20 pb-6 md:pt-20 print:pt-3 cvPage">
+    <div className="px-2 pt-12 pb-6 md:pt-20 print:pt-3 print:md:pt-3 cvPage">
+      <ReactTooltip
+        place="top"
+        type="dark"
+        effect="solid"
+        delayHide={300}
+        delayShow={300}
+      />
       <div
-        className="fixed top-0 left-0 right-0 z-50 w-full h-12 bg-white bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-90 print:hidden"
+        className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center w-full h-12 bg-white bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90 print:hidden"
         style={{ backdropFilter: 'blur(2px)' }}
       >
         <Link href="/">
           <a className="absolute top-0 left-0 theme-switch">
             {resolvedTheme === 'dark' ? (
-              <RiHome4Line className="text-base" />
+              <RiHome4Line className="text-xl" />
             ) : (
-              <RiHome4Fill className="text-base" />
+              <RiHome4Fill className="text-xl" />
             )}
           </a>
         </Link>
+        <span className="hidden font-mono text-xs font-bold print:hidden md:block">Print: Ctrl + P / Page: A4 / Margin: Default </span>
         <button
           aria-label="Cambiar de blanco a negro"
           type="button"
@@ -44,7 +53,7 @@ export default function CvPage() {
           )}
         </button>
       </div>
-      <div className="relative z-0 grid w-full max-w-4xl gap-2 px-2 mx-auto md:grid-cols-5 print:grid-cols-5">
+      <div className="relative z-0 grid w-full max-w-4xl gap-2 px-2 mx-auto print:max-w-full md:grid-cols-5 print:grid-cols-5">
         <div className="relative col-span-2 w-96 print:w-auto">
           <h1 className="relative z-10 flex flex-col font-mono text-4xl uppercase print:text-md">
             <span className="font-black">santiago</span>
@@ -85,7 +94,7 @@ export default function CvPage() {
           </div>
         </div>
       </div>
-      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 gap-2 px-2 mx-auto text-sm print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
+      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 gap-2 px-2 mx-auto text-sm print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
         <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
           <div className="mt-3">
             <div className="border-b-2 border-dotted border-zinc-300">
@@ -101,29 +110,47 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Advanced use of Adobe {'&'} Windows</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="illustrator - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #illustrator
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="photoshop - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #photoshop
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="afterEffects - 50%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #afterEffects
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="vscode - 90%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #vscode
-                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="inDesign - 50%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #inDesign
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="blender - 33%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #blender
-                    <hr className="w-[33%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[33%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -145,33 +172,54 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Advanced web layout.</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="html5 - 90%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #html5
-                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="svg - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #svg
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="tailwindCss - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #tailwindCss
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="sass - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #sass
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="figma - 60%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #figma
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="cssModules - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #cssModules
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="designSystems - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #designSystems
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -196,25 +244,40 @@ export default function CvPage() {
                   connecting to frontends.
                 </p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="contentful - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #contentful
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="sanityIo - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #sanityIo
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="jekyll - 40%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #jekyll
-                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="netlifyCms - 40%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #netlifyCms
-                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="django - 10%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #django
-                    <hr className="w-[10%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[10%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -227,25 +290,40 @@ export default function CvPage() {
                   Experience working with a variety of development frameworks.
                 </p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="gatsby.js - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #gatsby.js
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="next.js - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #next.js
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="ember.js - 60%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #ember.js
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="jekyll - 60%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #jekyll
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="vue.js - 50%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #vue.js
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -255,25 +333,40 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Deploying and optimization</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="netlify - 60%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #netlify
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="gh-pages - 70%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #gh-pages
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="vercel - 60%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #vercel
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="lighthouse - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #lighthouse
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
+                  <span
+                    data-tip="purgeCss - 80%"
+                    className="mt-2 mr-2 font-bold duration-300 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70"
+                  >
                     #purgeCss
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300 print:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -315,10 +408,9 @@ export default function CvPage() {
               ux designer and frontend developer
             </h4>
             <p className="pt-1 pr-12 print:pr-6">
-              Improve the user experience on the Digital Parliamentary System
-              . Enhanced the parliamentary processes from web
-              to print. Create internal and external websites for the
-              institution.
+              Improve the user experience on the Digital Parliamentary System .
+              Enhanced the parliamentary processes from web to print. Create
+              internal and external websites for the institution.
             </p>
             <time className="relative left-0 flex flex-col items-start justify-end text-xs italic opacity-50 md:items-end md:text-right md:left-auto md:right-0 top-2 md:top-0 md:absolute print:text-xs print:absolute print:right-0 print:items-end print:top-0 print:z-0">
               Feb. 2014 ‒ Dec. 2015
