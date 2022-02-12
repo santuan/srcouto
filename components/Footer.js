@@ -35,7 +35,9 @@ export default function Footer() {
           <ExternalLink href="https://www.linkedin.com/in/santuan/">
             Linkedin
           </ExternalLink>
-          <Stn />
+          <Link href="/cv">
+            <a>CV</a>
+          </Link>
         </div>
       </div>
     </footer>

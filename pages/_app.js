@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import '@/styles/Offcanvas.css';
 import '@/styles/Header.css';
 import '@/styles/Prose.css';
+import '@/styles/Print.css';
 import '@fontsource/fira-sans';
 import '@fontsource/space-mono';
 import '@fontsource/vollkorn';

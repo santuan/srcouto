@@ -1,0 +1,32 @@
+@media print {
+  .headroom,
+  .bm-burger-button,
+  .bm-overlay + div:before,
+  .bm-overlay,
+  footer,
+  .theme-switch {
+    @apply hidden !important;
+  }
+
+  body,
+  header,
+  .headroom {
+    @apply bg-white !important;
+  }
+
+  .dark * {
+    @apply bg-white !important;
+  }
+
+  * {
+    @apply text-gray-900 !important;
+  }
+
+  main {
+    @apply p-0 m-0 !important;
+  }
+}
+
+.cvPage .headroom {
+  @apply hidden;
+}
