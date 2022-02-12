@@ -15,8 +15,8 @@ export default function CvPage() {
   return (
     <div className="px-2 pt-20 pb-6 md:pt-20 print:pt-3 cvPage">
       <div
-        className="fixed top-0 left-0 right-0 z-50 w-full h-12 bg-gradient-to-b via-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-transparent from-white dark:via-gray-900 to-transparent bg-opacity-90 dark:bg-opacity-90 print:hidden"
-        style={{ backdropFilter: 'blur(.5px)' }}
+        className="fixed top-0 left-0 right-0 z-50 w-full h-12 bg-white bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-90 print:hidden"
+        style={{ backdropFilter: 'blur(2px)' }}
       >
         <Link href="/">
           <a className="absolute top-0 left-0 theme-switch">
@@ -34,7 +34,7 @@ export default function CvPage() {
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           {mounted && (
-            <div className="p-4 pr-5 text-xl text-gray-800 dark:text-gray-200">
+            <div className="p-4 pr-5 text-xl text-zinc-800 dark:text-zinc-200">
               {resolvedTheme === 'dark' ? (
                 <MdLightbulbOutline />
               ) : (
@@ -51,7 +51,7 @@ export default function CvPage() {
             <span className="font-normal">rodríguez</span>
             <span className="font-light">couto</span>
           </h1>
-          <div className="absolute top-0 right-0 z-0 font-serif tracking-tighter text-white transform scale-150 -translate-x-20 translate-y-5 opacity-90 dark:text-gray-900 text-7xl print:hidden print:opacity-10">
+          <div className="absolute top-0 right-0 z-0 font-serif tracking-tighter text-white transform scale-150 -translate-x-20 translate-y-5 opacity-90 dark:text-zinc-900 text-7xl print:hidden print:opacity-10">
             <span
               className="opacity-30"
               style={{ textShadow: '2px 2px #555555' }}
@@ -88,8 +88,8 @@ export default function CvPage() {
       <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 gap-2 px-2 mx-auto text-sm print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
         <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
           <div className="mt-3">
-            <div className="border-b-2 border-gray-300 border-dotted">
-              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-gray-500 print:text-lg dark:border-white">
+            <div className="border-b-2 border-dotted border-zinc-300">
+              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-lg dark:border-white">
                 knowledge
               </h2>
             </div>
@@ -101,29 +101,29 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Advanced use of Adobe {'&'} Windows</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #illustrator
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #photoshop
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #afterEffects
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #vscode
-                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #inDesign
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #blender
-                    <hr className="w-[33%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[33%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -145,33 +145,33 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Advanced web layout.</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #html5
-                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[90%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #svg
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #tailwindCss
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #sass
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #figma
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #cssModules
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #designSystems
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -196,25 +196,25 @@ export default function CvPage() {
                   connecting to frontends.
                 </p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #contentful
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #sanityIo
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #jekyll
-                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #netlifyCms
-                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[40%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #django
-                    <hr className="w-[10%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[10%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -227,25 +227,25 @@ export default function CvPage() {
                   Experience working with a variety of development frameworks.
                 </p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #gatsby.js
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #next.js
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #ember.js
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #jekyll
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #vue.js
-                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[50%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -255,25 +255,25 @@ export default function CvPage() {
               <div className="flex flex-col w-full">
                 <p>Deploying and optimization</p>
                 <div className="flex flex-wrap items-start justify-start w-full text-sm italic font-bold">
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #netlify
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #gh-pages
-                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[70%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #vercel
-                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[60%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #lighthouse
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
-                  <span className="mt-2 mr-2 text-gray-700 border-b-2 border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                  <span className="mt-2 mr-2 border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700">
                     #purgeCss
-                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-gray-600 dark:border-gray-300" />
+                    <hr className="w-[80%] border-t-0 border-b-2 top-0.5 relative border-zinc-600 dark:border-zinc-300" />
                   </span>
                 </div>
               </div>
@@ -282,8 +282,8 @@ export default function CvPage() {
         </div>
         <div className="col-span-3 ">
           <div className="mt-3">
-            <div className="border-b-2 border-gray-300 border-dotted">
-              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-gray-500 print:text-lg dark:border-white">
+            <div className="border-b-2 border-dotted border-zinc-300">
+              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-lg dark:border-white">
                 Work Experience
               </h2>
             </div>
@@ -305,7 +305,7 @@ export default function CvPage() {
               <span>public sector</span>
             </time>
           </div>
-          <hr className="my-2 border-gray-900 border-dashed opacity-30" />
+          <hr className="my-2 border-dashed border-zinc-900 opacity-30" />
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
@@ -325,7 +325,7 @@ export default function CvPage() {
               <span>public sector</span>
             </time>
           </div>
-          <hr className="my-2 border-gray-900 border-dashed opacity-30" />
+          <hr className="my-2 border-dashed border-zinc-900 opacity-30" />
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">estudio criteria</h3>
@@ -341,7 +341,7 @@ export default function CvPage() {
               <span>private sector</span>
             </time>
           </div>
-          <hr className="my-2 border-gray-900 border-dashed opacity-30" />
+          <hr className="my-2 border-dashed border-zinc-900 opacity-30" />
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
@@ -361,8 +361,8 @@ export default function CvPage() {
           </div>
 
           <div className="pb-3 mt-3">
-            <div className="border-b-2 border-gray-300 border-dotted">
-              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-gray-500 print:text-lg dark:border-white">
+            <div className="border-b-2 border-dotted border-zinc-300">
+              <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-lg dark:border-white">
                 Education
               </h2>
             </div>
@@ -376,7 +376,7 @@ export default function CvPage() {
               2007 - 2014
             </time>
           </div>
-          <hr className="mb-3 border-gray-900 border-dashed opacity-30" />
+          <hr className="mb-3 border-dashed border-zinc-900 opacity-30" />
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
               tipitos argentinos{' '}
@@ -389,7 +389,7 @@ export default function CvPage() {
               2013
             </time>
           </div>
-          <hr className="mb-3 border-gray-900 border-dashed opacity-30" />
+          <hr className="mb-3 border-dashed border-zinc-900 opacity-30" />
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
@@ -400,7 +400,7 @@ export default function CvPage() {
               1999 - 2007
             </time>
           </div>
-          <hr className="mb-3 border-gray-900 border-dashed opacity-30" />
+          <hr className="mb-3 border-dashed border-zinc-900 opacity-30" />
 
           <div className="relative my-3 print:mt-4">
             <h3 className="text-base font-black uppercase">
