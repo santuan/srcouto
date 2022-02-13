@@ -275,6 +275,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-4.5.4.tgz#bcab5ec577e79e2a155e3669cf8337a3882d693b"
   integrity sha512-TxosIhRLf4JVtvlJx+9eVLO01gyW0UDnP7zfqzjvZLr4nkSaL4Z1TyOImD2K+nJ4Gr6cIJOBdTgWh3RzPy175w==
 
+"@headlessui/react@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.4.3.tgz#f77c6bb5cb4a614a5d730fb880cab502d48abf37"
+  integrity sha512-n2IQkaaw0aAAlQS5MEXsM4uRK+w18CrM72EqnGRl/UBOQeQajad8oiKXR9Nk15jOzTFQjpxzrZMf1NxHidFBiw==
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"

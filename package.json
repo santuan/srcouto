@@ -12,6 +12,7 @@
     "@fontsource/space-mono": "^4.4.2",
     "@fontsource/vollkorn": "^4.4.2",
     "@fontsource/vollkorn-sc": "^4.4.2",
+    "@headlessui/react": "^1.4.3",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "1.6.22",
     "@next/mdx": "^11.0.1",

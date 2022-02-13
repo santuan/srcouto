@@ -4,6 +4,14 @@ import '@/styles/Header.css';
 import '@/styles/Prose.css';
 import '@/styles/Print.css';
 import '@fontsource/fira-sans';
+import '@fontsource/fira-sans/400-italic.css'
+import '@fontsource/fira-sans/300-italic.css'
+import '@fontsource/fira-sans/300.css'
+import '@fontsource/fira-sans/500.css'
+import '@fontsource/fira-sans/500-italic.css'
+import '@fontsource/fira-sans/600.css'
+import '@fontsource/fira-sans/800.css'
+import '@fontsource/fira-sans/800-italic.css'
 import '@fontsource/space-mono';
 import '@fontsource/vollkorn';
 import { ThemeProvider } from 'next-themes';
