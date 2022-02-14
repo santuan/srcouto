@@ -117,7 +117,7 @@ const BodyCvEs = () => {
               <TechsItem title="blender" percentage="33%" />
             </Tech>
             <Tech description="Enfoque de diseño accesible y adaptado a cualquier dispositivo." />
-            <Tech description="Compatibility working with web standards." />
+            <Tech description="Compatibilidad trabajando con todos los navegadores." />
             <Tech description="Maquetación web avanzada.">
               <TechsItem title="html5" percentage="90%" />
               <TechsItem title="svg" percentage="80%" />
@@ -130,7 +130,7 @@ const BodyCvEs = () => {
             <h3 className="mt-6 text-base font-medium uppercase">
               desarrollador frontend
             </h3>
-            <Tech description="Nivel intermedio de Linux con manejo de terminal de comandos y control de versiones." />
+            <Tech description="Nivel intermedio de Linux con manejo de terminal de comandos y control de versiones." />
             <Tech description="Integración de aplicaciones y webs con diversos gestores de contenidos.">
               <TechsItem title="contentfulCMS" percentage="70%" />
               <TechsItem title="sanityCMS" percentage="70%" />

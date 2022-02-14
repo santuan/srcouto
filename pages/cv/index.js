@@ -38,7 +38,7 @@ export default function CvPageEs() {
           </a>
         </Link>
         <Link href="/cv/en">
-          <a className="absolute top-0 z-50 p-2 m-1 text-lg right-32">EN</a>
+          <a data-tip="English" className="absolute top-0 z-50 p-2 m-1 text-lg right-16 md:right-32">EN</a>
         </Link>
         <Popover />
         <button

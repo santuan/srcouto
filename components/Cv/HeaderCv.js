@@ -1,7 +1,7 @@
 const HeaderCv = () => {
   return (
     <>
-      <div className="relative z-0 grid w-full max-w-4xl grid-cols-1 mx-auto md:gap-2 print:max-w-full md:grid-cols-5 print:grid-cols-5">
+      <div className="relative z-0 grid w-full max-w-4xl grid-cols-1 mx-auto sm:gap-2 print:max-w-full sm:grid-cols-5 print:grid-cols-5">
         <div className="relative w-full col-span-2 print:w-auto">
           <h1 className="relative z-10 flex flex-col font-sans text-2xl leading-relaxed tracking-widest uppercase dark:text-white print:text-xl">
             <span className="font-extrabold">santiago</span>
@@ -49,13 +49,13 @@ const HeaderCv = () => {
             </svg>
           </div>
         </div>
-        <div className="grid flex-1 w-full col-span-3 gap-3 mt-2 font-medium dark:text-white print:mt-0 md:grid-cols-2 print:grid-cols-2 md:h-28">
-          <div className="flex flex-col my-2 space-y-4 text-sm print:space-y-1">
+        <div className="grid flex-1 w-full grid-cols-2 col-span-3 gap-3 mt-5 font-medium dark:text-white print:mt-0 print:grid-cols-2">
+          <div className="flex flex-col my-2 space-y-1 text-sm print:space-y-1">
             <span>33 (Nov. 1988)</span>
             <span>Buenos Aires (Argentina)</span>
             <span>Full Stack Developer </span>
           </div>
-          <div className="flex flex-col my-2 space-y-4 text-sm print:space-y-1 md:text-right">
+          <div className="flex flex-col my-2 space-y-1 text-sm print:space-y-1 print:text-right md:text-right">
             <span>www.srcouto.ar</span>
             <span>santuan.bot@gmail.com</span>
             <span>{'&'} Designer</span>
