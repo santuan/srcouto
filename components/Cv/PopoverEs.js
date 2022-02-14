@@ -14,7 +14,7 @@ const DesktopControls = [
   {
     name: 'Zoom',
     command: 'Ctrl + / Ctrl -',
-    description: 'Zoom in (+) y out (-)',
+    description: 'Ampliar (+) o Disminuir (-)',
     href: '##',
     icon: IconTwo
   }

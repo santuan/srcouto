@@ -24,7 +24,7 @@ const TechsItem = ({ title, percentage }) => {
   return (
     <div
       data-tip={`${title} ${percentage}`}
-      className="mt-2 mr-2 font-medium border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70 print:border-zinc-300 print:opacity-100"
+      className="mt-2 mr-2 text-sm font-medium border-b-2 print:text-xs text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70 print:border-zinc-300 print:opacity-100"
     >
       #{title}
       <hr
@@ -39,14 +39,14 @@ const WorkExperience = ({ title, role, line, sector, time, children }) => {
   return (
     <>
       <div className="relative my-3 print:mt-2">
-        <h3 className="text-lg font-bold">{title}</h3>
-        <h4 className="relative text-sm italic font-medium opacity-70 -top-1">
+        <h3 className="text-lg font-bold print:text-base">{title}</h3>
+        <h4 className="relative text-sm italic font-medium print:text-xs opacity-70 -top-1">
           {role}
         </h4>
         <p className="pt-0 pr-0 md:pr-12 print:pr-6 print:pt-0">{children}</p>
         <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
           <span className="md:mb-0.5 text-xs uppercase md:ml-0">
-            {sector} sector
+            sector {sector}
           </span>
           {time}
         </time>
@@ -64,8 +64,8 @@ const EducationItem = ({ time, line, children, description }) => {
   return (
     <>
       <div className="relative my-3 print:mt-2">
-        <h3 className="text-lg font-bold ">{children}</h3>
-        <h4 className="text-base">{description}</h4>
+        <h3 className="text-lg font-bold print:text-base">{children}</h3>
+        <h4 className="text-base print:text-xs">{description}</h4>
         <time className="absolute right-0 italic opacity-50 top-1">{time}</time>
       </div>
       {line ? (
@@ -82,7 +82,7 @@ const Title = ({ title }) => {
     <>
       <div className="mt-3">
         <div className="border-b-2 border-dotted border-zinc-300">
-          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-lg dark:border-white top-0.5">
+          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-base dark:border-white top-0.5">
             {title}
           </h2>
         </div>
@@ -105,7 +105,7 @@ const BodyCv = () => {
         <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
           <div className="mt-3">
             <Title title="knowledge" />
-            <h3 className="mt-4 text-base font-medium uppercase">
+            <h3 className="mt-4 text-base font-medium uppercase print:text-sm">
               ux and ui designer
             </h3>
             <Tech description="Advanced use of Adobe & Windows">
@@ -127,18 +127,11 @@ const BodyCv = () => {
               <TechsItem title="cssModules" percentage="70%" />
               <TechsItem title="designSystems" percentage="70%" />
             </Tech>
-            <h3 className="mt-6 text-base font-medium uppercase">
+            <h3 className="mt-4 text-base font-medium uppercase print:text-sm">
               frontend developer
             </h3>
-
-            <Tech
-              description=" Intermediate level using Linux terminal and git version
-                  control."
-            />
-            <Tech
-              description="Intermediate experience creating models for headless cms and
-                  connecting to frontends."
-            >
+            <Tech description=" Intermediate level using Linux terminal and git version control." />
+            <Tech description="Intermediate experience creating models for headless cms and connecting to frontends.">
               <TechsItem title="contentfulCMS" percentage="70%" />
               <TechsItem title="sanityCMS" percentage="70%" />
               <TechsItem title="jekyll" percentage="50%" />
@@ -173,7 +166,6 @@ const BodyCv = () => {
             user experience for the websites and applications for the
             institution.
           </WorkExperience>
-
           <WorkExperience
             title="Chamber of Deputies - Argentina"
             role="ux designer and junior frontend developer"
@@ -219,7 +211,6 @@ const BodyCv = () => {
               by Aldo de Losa
             </i>
           </EducationItem>
-
           <EducationItem
             description="First Certificate Exam"
             time="1999 - 2007"
@@ -227,7 +218,6 @@ const BodyCv = () => {
           >
             Clover english centre
           </EducationItem>
-
           <EducationItem
             description="Focus on computer programming."
             time="2002 - 2007"

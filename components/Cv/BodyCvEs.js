@@ -24,7 +24,7 @@ const TechsItem = ({ title, percentage }) => {
   return (
     <div
       data-tip={`${title} ${percentage}`}
-      className="mt-2 mr-2 font-medium border-b-2 text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70 print:border-zinc-300 print:opacity-100"
+      className="mt-2 mr-2 text-sm font-medium border-b-2 print:text-xs text-zinc-700 border-zinc-200 dark:text-zinc-300 dark:border-zinc-700 hover:opacity-70 print:border-zinc-300 print:opacity-100"
     >
       #{title}
       <hr
@@ -39,8 +39,8 @@ const WorkExperience = ({ title, role, line, sector, time, children }) => {
   return (
     <>
       <div className="relative my-3 print:mt-2">
-        <h3 className="text-lg font-bold">{title}</h3>
-        <h4 className="relative text-sm italic font-medium opacity-70 -top-1">
+        <h3 className="text-lg font-bold print:text-base">{title}</h3>
+        <h4 className="relative text-sm italic font-medium print:text-xs opacity-70 -top-1">
           {role}
         </h4>
         <p className="pt-0 pr-0 md:pr-12 print:pr-6 print:pt-0">{children}</p>
@@ -64,8 +64,8 @@ const EducationItem = ({ time, line, children, description }) => {
   return (
     <>
       <div className="relative my-3 print:mt-2">
-        <h3 className="text-lg font-bold ">{children}</h3>
-        <h4 className="text-base">{description}</h4>
+        <h3 className="text-lg font-bold print:text-base">{children}</h3>
+        <h4 className="text-base print:text-xs">{description}</h4>
         <time className="absolute right-0 italic opacity-50 top-1">{time}</time>
       </div>
       {line ? (
@@ -82,7 +82,7 @@ const Title = ({ title }) => {
     <>
       <div className="mt-3">
         <div className="border-b-2 border-dotted border-zinc-300">
-          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-lg dark:border-white top-0.5">
+          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-base dark:border-white top-0.5">
             {title}
           </h2>
         </div>
@@ -102,10 +102,10 @@ const BodyCvEs = () => {
         delayShow={300}
       />
       <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 mx-auto mt-3 text-sm dark:text-white md:gap-2 print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
-        <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
+        <div className="relative flex-initial col-span-2 md:pr-8 print:pr-8 ">
           <div className="mt-3">
             <Title title="Conocimientos" />
-            <h3 className="mt-4 text-base font-medium uppercase">
+            <h3 className="mt-4 text-base font-medium uppercase print:text-sm">
               diseñador ux y ui
             </h3>
             <Tech description="Nivel avanzado de Adobe y Windows.">
@@ -127,7 +127,7 @@ const BodyCvEs = () => {
               <TechsItem title="cssModules" percentage="70%" />
               <TechsItem title="designSystems" percentage="70%" />
             </Tech>
-            <h3 className="mt-6 text-base font-medium uppercase">
+            <h3 className="mt-4 text-base font-medium uppercase print:text-sm">
               desarrollador frontend
             </h3>
             <Tech description="Nivel intermedio de Linux con manejo de terminal de comandos y control de versiones." />

@@ -17,7 +17,7 @@ export default function CvPageEs() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="relative px-4 pt-12 pb-8 overflow-x-hidden font-sans print:text-gray-900 md:pt-20 print:pt-3 print:md:pt-3 cvPage">
+    <div className="relative px-4 pt-12 pb-8 overflow-x-hidden font-sans bg-white print:bg-white dark:bg-gray-900 print:text-gray-900 md:pt-20 print:pt-3 print:md:pt-3 cvPage">
       <a
         href="/static/cv-smrc-2022-es.pdf"
         target="_blank"
