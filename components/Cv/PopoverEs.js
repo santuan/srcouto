@@ -5,22 +5,22 @@ import { BsKeyboard } from 'react-icons/bs';
 
 const DesktopControls = [
   {
-    name: 'Print',
+    name: 'Imprimir',
     command: 'Ctrl P',
-    description: 'Page A4 - Margin default',
+    description: 'Página A4 - Margen por defecto',
     href: '##',
     icon: IconOne
   },
   {
     name: 'Zoom',
     command: 'Ctrl + / Ctrl -',
-    description: 'Zoom in (+) and out (-)',
+    description: 'Zoom in (+) y out (-)',
     href: '##',
     icon: IconTwo
   }
 ];
 
-export default function PopoverControls() {
+export default function PopoverEs() {
   return (
     <div className="fixed z-40 items-center justify-end hidden w-full h-12 max-w-sm px-2 print:hidden md:flex top-0.5 right-16">
       <Popover className="relative text-right ">
