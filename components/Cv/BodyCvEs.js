@@ -45,7 +45,7 @@ const WorkExperience = ({ title, role, line, sector, time, children }) => {
         </h4>
         <p className="pt-0 pr-0 md:pr-12 print:pr-6 print:pt-0">{children}</p>
         <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
-          <span className="md:mb-0.5 text-xs uppercase ml-2 md:ml-0">
+          <span className="md:mb-0.5 text-xs mr-1 uppercase md:mr-0">
             sector {sector}
           </span>
           {time}
