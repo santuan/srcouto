@@ -44,11 +44,11 @@ export default function PopoverControls() {
             <Popover.Button
               className={`
                 ${open ? 'ring-2 ring-gray-700' : 'text-opacity-90'}
-                text-white group bg-transparent items-center justify-center rounded p-1 inline-flex font-medium hover:text-opacity-100 hover:ring-2 ring-gray-300 duration-300 focus:outline-none focus-visible:ring-2 z-50 focus-visible:ring-gray-300 focus-visible:ring-opacity-75`}
+                text-white group bg-transparent items-center justify-center rounded p-1 inline-flex font-medium hover:text-opacity-100 hover:ring-2 ring-gray-300 duration-150 focus:outline-none focus-visible:ring-2 z-50 focus-visible:ring-gray-300 focus-visible:ring-opacity-75`}
             >
               <BsKeyboard
                 className={`${open ? '' : 'text-opacity-70'}
-                  text-gray-900 dark:text-white h-6 w-6 group-hover:text-opacity-80 transition ease-in-out duration-300`}
+                  text-gray-900 dark:text-white h-6 w-6 group-hover:text-opacity-80 transition ease-in-out duration-150`}
                 aria-hidden="true"
               />
             </Popover.Button>

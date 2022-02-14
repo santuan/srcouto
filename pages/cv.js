@@ -4,6 +4,8 @@ import { useTheme } from 'next-themes';
 import { HiLightBulb } from 'react-icons/hi';
 import { MdLightbulbOutline } from 'react-icons/md';
 import { RiHome4Fill, RiHome4Line } from 'react-icons/ri';
+import { AiOutlineDownload } from 'react-icons/ai';
+
 import ReactTooltip from 'react-tooltip';
 import Popover from '@/components/Cv/Popover';
 
@@ -15,7 +17,7 @@ export default function CvPage() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="relative px-2 pt-12 pb-8 overflow-x-hidden font-sans print:text-gray-900 md:pt-20 print:pt-3 print:md:pt-3 cvPage">
+    <div className="relative px-4 pt-12 pb-8 overflow-x-hidden font-sans print:text-gray-900 md:pt-20 print:pt-3 print:md:pt-3 cvPage">
       <ReactTooltip
         place="top"
         type="dark"
@@ -23,11 +25,16 @@ export default function CvPage() {
         delayHide={300}
         delayShow={300}
       />
-
-      
-      <div
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-12 bg-white lg:bg-transparent bg-opacity-90 dark:bg-gray-900 lg:dark:bg-transparent dark:bg-opacity-90 print:hidden lg:backdrop-blur-0"
+      <a
+        href="/static/cv-smrc-2022.pdf"
+        target="_blank"
+        data-tip="Download PDF"
+        rel="noopener noreferrer"
+        className="fixed bottom-0 right-0 z-50 p-2 m-2 text-2xl duration-150 bg-gray-200 rounded dark:bg-gray-800 print:hidden ring-black dark:ring-white hover:ring-2 ring-0 text-zinc-800 dark:text-zinc-200"
       >
+        <AiOutlineDownload />
+      </a>
+      <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-12 bg-white lg:bg-transparent bg-opacity-90 dark:bg-gray-900 lg:dark:bg-transparent dark:bg-opacity-90 print:hidden lg:backdrop-blur-0">
         <Link href="/">
           <a className="absolute top-0 left-0 theme-switch">
             {resolvedTheme === 'dark' ? (
@@ -58,7 +65,7 @@ export default function CvPage() {
       </div>
       <div className="relative z-0 grid w-full max-w-4xl grid-cols-1 mx-auto md:gap-2 print:max-w-full md:grid-cols-5 print:grid-cols-5">
         <div className="relative w-full col-span-2 print:w-auto">
-          <h1 className="relative z-10 flex flex-col font-sans text-2xl leading-relaxed tracking-widest uppercase print:text-xl">
+          <h1 className="relative z-10 flex flex-col font-sans text-2xl leading-relaxed tracking-widest uppercase dark:text-white print:text-xl">
             <span className="font-extrabold">santiago</span>
             <span className="font-medium">rodríguez</span>
             <span className="font-light">couto</span>
@@ -104,7 +111,7 @@ export default function CvPage() {
             </svg>
           </div>
         </div>
-        <div className="grid flex-1 w-full col-span-3 gap-3 mt-2 font-medium print:mt-0 md:grid-cols-2 print:grid-cols-2 md:h-28">
+        <div className="grid flex-1 w-full col-span-3 gap-3 mt-2 font-medium dark:text-white print:mt-0 md:grid-cols-2 print:grid-cols-2 md:h-28">
           <div className="flex flex-col my-2 space-y-4 text-sm print:space-y-1">
             <span>33 years</span>
             <span>Buenos Aires (Argentina)</span>
@@ -117,7 +124,7 @@ export default function CvPage() {
           </div>
         </div>
       </div>
-      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 mx-auto mt-3 text-sm md:gap-2 print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
+      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 mx-auto mt-3 text-sm dark:text-white md:gap-2 print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
         <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
           <div className="mt-3">
             <div className="border-b-2 border-dotted border-zinc-300">
@@ -414,8 +421,10 @@ export default function CvPage() {
               user experience for the websites and applications for the
               institution.
             </p>
-            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute">
-              <span className="md:mb-0.5 text-xs uppercase md:ml-0">public sector</span>
+            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
+              <span className="md:mb-0.5 text-xs uppercase md:ml-0">
+                public sector
+              </span>
               Nov. 2018 ‒ Present
             </time>
           </div>
@@ -433,8 +442,10 @@ export default function CvPage() {
               Enhanced the parliamentary processes from web to print. Create
               internal and external websites for the institution.
             </p>
-            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute">
-              <span className="md:mb-0.5 text-xs uppercase md:ml-0">public sector</span>
+            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
+              <span className="md:mb-0.5 text-xs uppercase md:ml-0">
+                public sector
+              </span>
               Feb. 2014 ‒ Dec. 2015
             </time>
           </div>
@@ -449,8 +460,10 @@ export default function CvPage() {
               Designer and developer of corporate websites. Brand design and
               corporate brochures.
             </p>
-            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute">
-              <span className="md:mb-0.5 text-xs uppercase md:ml-0">private sector</span>
+            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
+              <span className="md:mb-0.5 text-xs uppercase md:ml-0">
+                private sector
+              </span>
               Feb. 2013 ‒ Mar. 2014
             </time>
           </div>
@@ -465,8 +478,10 @@ export default function CvPage() {
               Designer of newsletters / Company websites. Server Technical
               support / Basic management of hosting servers.
             </p>
-            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute">
-              <span className="md:mb-0.5 text-xs uppercase md:ml-0">private sector</span>
+            <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
+              <span className="md:mb-0.5 text-xs uppercase md:ml-0">
+                private sector
+              </span>
               Feb. 2011 ‒ Mar. 2013
             </time>
           </div>
