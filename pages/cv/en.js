@@ -29,7 +29,7 @@ export default function CvPage() {
       </a>
       <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-12 bg-white lg:bg-transparent bg-opacity-90 dark:bg-gray-900 lg:dark:bg-transparent dark:bg-opacity-90 print:hidden lg:backdrop-blur-0">
         <Link href="/">
-          <a className="absolute top-0 left-0 theme-switch">
+          <a className="absolute top-0 left-0 text-gray-900 theme-switch dark:text-white">
             {resolvedTheme === 'dark' ? (
               <RiHome4Line className="text-xl" />
             ) : (
@@ -38,7 +38,7 @@ export default function CvPage() {
           </a>
         </Link>
         <Link href="/cv">
-          <a data-tip="Español" className="absolute top-0 z-50 p-2 m-1 text-lg right-16 md:right-32">ES</a>
+          <a data-tip="Español" className="absolute top-0 z-50 p-2 m-1 text-lg text-gray-900 dark:text-white right-16 md:right-32">ES</a>
         </Link>
         <Popover />
         <button
