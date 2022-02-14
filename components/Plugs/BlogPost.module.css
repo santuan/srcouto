@@ -7,7 +7,7 @@
 }
 
 .Title {
-  @apply inline-block pr-4 mb-2 text-2xl font-bold text-gray-900 duration-100 md:text-3xl;
+  @apply inline-block pr-4 mb-2 text-2xl font-medium text-gray-900 duration-100 md:text-3xl;
 }
 
 :global(.dark) .Title {
@@ -15,7 +15,7 @@
 }
 
 .Icon {
-  @apply absolute top-0 right-0 mx-3 text-2xl font-bold text-gray-900 mt-7 opacity-80;
+  @apply absolute top-0 right-0 mx-3 text-2xl font-medium text-gray-900 mt-7 opacity-80;
 }
 
 :global(.dark) .Icon {

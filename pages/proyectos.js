@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
       <div className={styles.PageContainer}>
         <Heading
           title="Proyectos"
-          subtitle="Espacios en donde colaboro."
+          subtitle="Espacios en colaboración."
         />
         {filteredProjects.map((frontMatter) => (
           <ProjectItems key={frontMatter.title} {...frontMatter} />

@@ -1,5 +1,5 @@
 .Title {
-  @apply px-4 mb-4 font-sans text-4xl font-bold text-black md:text-5xl;
+  @apply px-4 mb-4 font-sans text-4xl font-medium text-black md:text-5xl;
 }
 :global(.dark) .Title {
   @apply text-white;
