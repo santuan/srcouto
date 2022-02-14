@@ -1,7 +1,7 @@
 const Bio = () => {
   return (
     <>
-      <div className="px-4 prose-xl text-justify prose-yellow hyphens">
+      <div className="px-4 prose-xl text-justify dark:text-white prose-yellow hyphens">
         <p>
           Estudié la carrera de diseño gráfico en la
           Universidad de Buenos Aires. Paralelamente me fui dedicando cada vez
