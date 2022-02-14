@@ -3,12 +3,14 @@ const Bio = () => {
     <>
       <div className="px-4 prose-xl text-justify dark:text-white prose-yellow hyphens">
         <p>
-          Estudié la carrera de diseño gráfico en la
-          Universidad de Buenos Aires. Paralelamente me fui dedicando cada vez
-          más a investigar las herramientas y conocimientos que la comunidad de
-          software libre ofrece de manera gratuita. Implemento ambas tecnologías
-          en una gran diversidad proyectos y colaboro para que puedan iniciar
-          sus espacios personales en internet.
+          Estudié la carrera de diseño gráfico en la Universidad de Buenos
+          Aires. Paralelamente me fui dedicando cada vez más a investigar las
+          herramientas y conocimientos que la comunidad de software libre ofrece
+          de manera gratuita.
+        </p>
+        <p>
+          Implemento ambas tecnologías en una gran diversidad proyectos y
+          colaboro para que puedan iniciar sus espacios personales en internet.
         </p>
         <p>
           Gracias a eso puedo mantener el sitio web{' '}
@@ -19,14 +21,16 @@ const Bio = () => {
           >
             cooparaje.com.ar
           </a>
-          . Una web donde voy subiendo recursos y herramientas gratuitas que amigas y
-          amigos me van compartiendo y pueden aplicarse a todo tipo de espacios.
+          . Una web donde voy subiendo recursos y herramientas gratuitas que
+          amigas y amigos me van compartiendo y pueden aplicarse a todo tipo de
+          espacios.
         </p>
         <p>
           La mayoría de los sitios pueden realizarse implementando las mejores
-          herramientas de programación usando su plan gratuito. Cada uno de estos servicios cuentan con un plan con sus
-          respectivos limitantes pero que en su mayoria suelen ser más de lo
-          necesario para arrancar a una menor escala.
+          herramientas de programación usando su plan gratuito. Cada uno de
+          estos servicios cuentan con un plan con sus respectivos limitantes
+          pero que en su mayoria suelen ser más de lo necesario para arrancar a
+          una menor escala.
         </p>
 
         <p>
@@ -34,7 +38,9 @@ const Bio = () => {
           podés sentirte libre de contactarte y trataré de colaborar dentro de
           las posibilidades.
         </p>
-        <p className="text-center duration-300 opacity-70 hover:opacity-100">Y desde ya, muchas gracias por su atención</p>
+        <p className="text-center duration-300 opacity-70 hover:opacity-100">
+          Y desde ya, muchas gracias por su atención
+        </p>
       </div>
     </>
   );
