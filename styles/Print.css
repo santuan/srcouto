@@ -28,7 +28,7 @@
 }
 
 .__react_component_tooltip {
-  @apply font-bold text-white uppercase bg-gray-900;
+  @apply font-bold text-white uppercase bg-gray-600;
 }
 
 .cvPage .theme-switch {

@@ -43,7 +43,7 @@ export default function PopoverControls() {
           <>
             <Popover.Button
               className={`
-                ${open ? 'ring-2 ring-gray-300' : 'text-opacity-90'}
+                ${open ? 'ring-2 ring-gray-700' : 'text-opacity-90'}
                 text-white group bg-transparent items-center justify-center rounded p-1 inline-flex font-medium hover:text-opacity-100 hover:ring-2 ring-gray-300 duration-300 focus:outline-none focus-visible:ring-2 z-50 focus-visible:ring-gray-300 focus-visible:ring-opacity-75`}
             >
               <BsKeyboard
