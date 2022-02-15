@@ -31,7 +31,7 @@ export default function CvPageEs(props) {
     <>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
