@@ -96,16 +96,17 @@ export default function CvPageEs(props) {
           </Link>
           <Link href="/cv/en">
             <a
-              data-tip="English"
-              className="absolute top-0 z-50 p-2 m-1 text-lg text-gray-900 dark:text-white right-16 md:right-32"
+              data-tip="Traducir al Inglés"
+              className="absolute z-50 w-8 h-8 m-1 font-mono text-lg font-medium text-gray-900 rounded kush-center hover:ring-2 ring-transparent hover:ring-gray-300 dark:text-white right-16 md:right-32"
             >
-              EN
+              ES
             </a>
           </Link>
           <Popover />
           <button
             aria-label="Cambiar de blanco a negro"
             type="button"
+            data-tip="Cambiar Luz"
             className="theme-switch"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')

@@ -110,7 +110,3 @@
 .cvPage .theme-switch {
   @apply right-0 top-0 !important;
 }
-
-.cvPage .headroom {
-  @apply hidden;
-}

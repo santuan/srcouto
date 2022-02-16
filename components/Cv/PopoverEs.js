@@ -7,7 +7,7 @@ const DesktopControls = [
   {
     name: 'Imprimir',
     command: 'Ctrl P',
-    description: 'Página A4 - Margen por defecto',
+    description: 'Página A4 - Margen defecto - Orientación Vertical',
     href: '##',
     icon: IconOne
   },
@@ -27,6 +27,7 @@ export default function PopoverEs() {
         {({ open }) => (
           <>
             <Popover.Button
+              data-tip="Atajo de Teclado"
               className={`
                 ${open ? 'ring-2 ring-gray-700' : 'text-opacity-90'}
                 text-white group bg-transparent items-center justify-center rounded p-1 inline-flex font-medium hover:text-opacity-100 hover:ring-2 ring-gray-300 duration-150 focus:outline-none focus-visible:ring-2 z-50 focus-visible:ring-gray-300 focus-visible:ring-opacity-75`}
@@ -39,7 +40,7 @@ export default function PopoverEs() {
             </Popover.Button>
             <Transition
               as={Fragment}
-              enter="transition ease-out duration-200"
+              enter="transition ease-out"
               enterFrom="opacity-0 translate-y-1"
               enterTo="opacity-100 translate-y-0"
               leave="transition ease-in duration-150"
@@ -53,9 +54,9 @@ export default function PopoverEs() {
                       <div
                         key={item.name}
                         // href={item.href}
-                        className="flex items-center p-3 -m-3 transition duration-150 ease-in-out rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-zinc-500 focus-visible:ring-opacity-50"
+                        className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-zinc-500 focus-visible:ring-opacity-50"
                       >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-200 rounded dark:bg-gray-700 print:bg-white sm:h-12 sm:w-12">
+                        <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 text-white bg-gray-200 rounded dark:bg-gray-700 print:bg-white sm:h-8 sm:w-8">
                           <item.icon aria-hidden="true" />
                         </div>
                         <div className="relative w-full ml-2">

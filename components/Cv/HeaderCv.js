@@ -1,7 +1,7 @@
 const HeaderCv = () => {
   return (
     <>
-      <div className="relative z-0 grid w-full max-w-4xl grid-cols-1 mx-auto sm:gap-2 print:max-w-full sm:grid-cols-5 print:grid-cols-5">
+      <div className="relative z-0 grid w-full max-w-2xl grid-cols-1 mx-auto sm:gap-2 print:max-w-full sm:grid-cols-5 print:grid-cols-5">
         <div className="relative w-full col-span-2 print:w-auto">
           <h1 className="relative z-10 flex flex-col font-sans text-2xl leading-relaxed tracking-widest uppercase dark:text-white print:text-xl">
             <span className="font-extrabold">santiago</span>
