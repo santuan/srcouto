@@ -34,7 +34,6 @@ const TechsItem = ({ title, percentage }) => {
     </div>
   );
 };
-
 const WorkExperience = ({ title, role, line, sector, time, children }) => {
   return (
     <>
@@ -45,9 +44,13 @@ const WorkExperience = ({ title, role, line, sector, time, children }) => {
         </h4>
         <p className="pt-0 pr-0 md:pr-12 print:pr-6 print:pt-0">{children}</p>
         <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
-          <span className="md:mb-0.5 text-xs mr-1 uppercase md:mr-0">
-            sector {sector}
-          </span>
+          {sector ? (
+            <span className="md:mb-0.5 text-xs mr-1 uppercase md:mr-0">
+              sector {sector}
+            </span>
+          ) : (
+            ''
+          )}
           {time}
         </time>
       </div>
@@ -69,7 +72,7 @@ const EducationItem = ({ time, line, children, description }) => {
         <time className="absolute right-0 italic opacity-50 top-1">{time}</time>
       </div>
       {line ? (
-        <hr className="mb-3 border-dashed border-zinc-900 opacity-30" />
+        <hr className="mb-3 border-dashed border-zinc-900 print:border-zinc-800 opacity-30" />
       ) : (
         ''
       )}
@@ -81,8 +84,8 @@ const Title = ({ title }) => {
   return (
     <>
       <div className="mt-3">
-        <div className="border-b-2 border-dotted border-zinc-300">
-          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-base dark:border-white top-0.5">
+        <div className="border-b-2 border-dotted border-zinc-300 print:border-zinc-800">
+          <h2 className="relative inline-block py-2 text-xl font-black uppercase border-b-2 border-zinc-500 print:text-base dark:border-white print:border-zinc-800 top-0.5">
             {title}
           </h2>
         </div>
@@ -101,7 +104,7 @@ const BodyCv = () => {
         delayHide={300}
         delayShow={300}
       />
-      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 mx-auto mt-3 text-sm dark:text-white md:gap-2 print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
+      <div className="grid w-full max-w-4xl min-h-screen grid-cols-1 mx-auto mt-3 text-sm print:mt-0 dark:text-white md:gap-2 print:max-w-full print:grid-cols-5 md:grid-cols-5 print:min-h-full print:text-xs">
         <div className="relative flex-initial col-span-2 md:pr-12 print:pr-12 ">
           <div className="mt-3">
             <Title title="knowledge" />
@@ -155,6 +158,15 @@ const BodyCv = () => {
         </div>
         <div className="col-span-3 ">
           <Title title="Work Experience" />
+          <WorkExperience
+            title="Cooparaje.com.ar"
+            role="Founder/ux/ui/ua/seo/ designer and frontend developer"
+            time="Present"
+            line
+          >
+            Collections of free resources, tools and technologies on the internet.
+            
+          </WorkExperience>
           <WorkExperience
             title="Public Prosecutor's Office"
             role="ux/ui designer and frontend developer"

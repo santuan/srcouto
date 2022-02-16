@@ -53,12 +53,11 @@ const HeaderCv = () => {
           <div className="flex flex-col my-2 space-y-1 text-sm print:space-y-1">
             <span>Buenos Aires (Argentina)</span>
             <span>Full Stack Developer </span>
-            <span>{'&'} Web Designer</span>
+            <span>{'&'} Diseñador Web</span>
           </div>
           <div className="flex flex-col my-2 space-y-1 text-sm italic print:space-y-1 print:text-right md:text-right">
             <span>www.srcouto.ar</span>
             <span>santuan.bot@gmail.com</span>
-            <span></span>
           </div>
         </div>
       </div>

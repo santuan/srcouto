@@ -45,9 +45,13 @@ const WorkExperience = ({ title, role, line, sector, time, children }) => {
         </h4>
         <p className="pt-0 pr-0 md:pr-12 print:pr-6 print:pt-0">{children}</p>
         <time className="relative top-0 right-0 flex items-center my-3 space-x-3 text-xs italic print:space-x-0 print:items-end print:m-0 print:flex-col md:space-x-0 md:m-0 md:items-end md:flex-col md:absolute print:absolute print:top-1">
-          <span className="md:mb-0.5 text-xs mr-1 uppercase md:mr-0">
-            sector {sector}
-          </span>
+          {sector ? (
+            <span className="md:mb-0.5 text-xs mr-1 uppercase md:mr-0">
+              sector {sector}
+            </span>
+          ) : (
+            ''
+          )}
           {time}
         </time>
       </div>
@@ -156,6 +160,15 @@ const BodyCvEs = () => {
         <div className="col-span-3 ">
           <Title title="Experiencia Laboral" />
           <WorkExperience
+            title="Cooparaje.com.ar"
+            role="Founder/ux/ui/ua/seo/ designer and frontend developer"
+            time="A la fecha"
+            line
+          >
+            Colecciones de recursos, herramientas y tecnologías gratuitas en
+            internet.
+          </WorkExperience>
+          <WorkExperience
             title="Ministerio Público Fiscal "
             role="diseñador ux/ui y desarrollador frontend"
             sector="público"
@@ -172,9 +185,9 @@ const BodyCvEs = () => {
             time="Feb. 2014 ‒ Dic. 2015"
             line
           >
-            Diseño de interfaz del Sistema Parlamentario Digital <br />
-            Digitalización de diversos procesos Parlamentarios <br />
-            Creación de webs internas y externas de la institución.
+            Diseño de interfaz del Sistema Parlamentario Digital Digitalización
+            de diversos procesos Parlamentarios Creación de webs internas y
+            externas de la institución.
           </WorkExperience>
           <WorkExperience
             title="Estudio Criteria"
@@ -183,8 +196,8 @@ const BodyCvEs = () => {
             time="Feb. 2013 ‒ Mar. 2014"
             line
           >
-            Diseño de marca y folleteria corporativa <br />
-            Diseño y maquetación de sitios webs corportivos.
+            Diseño de marca y folleteria corporativa Diseño y maquetación de
+            sitios webs corportivos.
           </WorkExperience>
           <WorkExperience
             title="Revision Alpha Hosting"

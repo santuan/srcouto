@@ -7,7 +7,7 @@ import { MdLightbulbOutline } from 'react-icons/md';
 import { RiHome4Fill, RiHome4Line } from 'react-icons/ri';
 import { AiOutlineDownload } from 'react-icons/ai';
 import Popover from '@/components/Cv/PopoverEs';
-import HeaderCv from '@/components/Cv/HeaderCv';
+import HeaderCv from '@/components/Cv/HeaderCvEs';
 import BodyCv from '@/components/Cv/BodyCvEs';
 import Head from 'next/head';
 
