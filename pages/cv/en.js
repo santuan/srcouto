@@ -103,16 +103,16 @@ export default function CvPage(props) {
           </Link>
           <Popover />
           <button
-            aria-label="Cambiar de blanco a negro"
+            aria-label="Change Light"
             type="button"
-            data-tip="Change lights"
-            className="theme-switch"
+            data-tip="Change Light"
+            className="fixed z-50 w-8 h-8 m-1 border-0 rounded right-2 kush-center focus:outline-none top-1 ring-2 ring-transparent hover:ring-gray-300"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
           >
             {mounted && (
-              <div className="p-4 pr-5 text-xl text-zinc-800 dark:text-zinc-200">
+              <div className="text-xl text-zinc-800 dark:text-zinc-200">
                 {resolvedTheme === 'dark' ? (
                   <MdLightbulbOutline />
                 ) : (
