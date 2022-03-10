@@ -1,16 +1,9 @@
 .Title {
-  @apply px-4 mb-4 font-sans text-4xl font-medium text-black md:text-5xl;
-}
-:global(.dark) .Title {
-  @apply text-white;
+  @apply px-4 mb-4 font-sans text-4xl font-medium text-black md:text-5xl dark:text-white;
 }
 
 .Subtitle {
-  @apply relative block px-4 mb-6 font-sans text-2xl text-gray-600;
-}
-
-:global(.dark) .Subtitle {
-  @apply text-gray-400;
+  @apply relative block px-4 mb-6 font-sans text-2xl text-gray-600 dark:text-gray-400;
 }
 
 .Subtitle a {
@@ -18,9 +11,5 @@
 }
 
 .Divider {
-  @apply w-full border-t border-gray-200;
-}
-
-:global(.dark) .Divider {
-  @apply border-gray-800
+  @apply w-full border-t border-gray-200 dark:border-gray-800;
 }

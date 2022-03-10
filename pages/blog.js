@@ -24,24 +24,18 @@ export default function Blog({ posts }) {
       description="Artículos en Inglés buscando su sentido en el Español. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
       <div className={styles.PageContainer}>
-        <Heading title="Blog" subtitle="Artículos en Inglés traducidos al Español. Historias y recursos que se relacionan con el mundo del diseño, la programación y el software libre." />
-        
+        <Heading
+          title="Blog"
+          subtitle="Artículos en Inglés traducidos al Español. Historias y recursos que se relacionan con el mundo del diseño, la programación y el software libre."
+        />
 
-        {!searchValue && (
+        {/* {!searchValue && (
           <>
             <FeaturedPost title="Textos Recomendados" />
           </>
-        )}
+        )} */}
         <SubHeading title="Todas las entradas" />
-        {!filteredBlogPosts.length && (
-          <p className="mb-4 text-gray-600 dark:text-gray-400">
-            No hubo resultados a su búsqueda.
-          </p>
-        )}
-        {filteredBlogPosts.map((frontMatter) => (
-          <BlogItem key={frontMatter.title} {...frontMatter} />
-        ))}
-        <div className="relative w-full px-3 my-6">
+        <div className="relative w-full px-3 mb-6">
           <input
             aria-label="Search articles"
             type="text"
@@ -67,6 +61,14 @@ export default function Blog({ posts }) {
             {posts.length} artículos
           </div>
         </div>
+        {!filteredBlogPosts.length && (
+          <p className="block w-full mb-4 text-center text-gray-600 opacity-50 dark:text-gray-400">
+            No hubo resultados a su búsqueda.
+          </p>
+        )}
+        {filteredBlogPosts.map((frontMatter) => (
+          <BlogItem key={frontMatter.title} {...frontMatter} />
+        ))}
       </div>
     </Container>
   );

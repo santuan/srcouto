@@ -12,11 +12,11 @@ import { MdLightbulbOutline } from 'react-icons/md';
 import styles from '@/styles/Container.module.css';
 
 export default function Container(props) {
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  // const [mounted, setMounted] = useState(false);
+  // const { resolvedTheme, setTheme } = useTheme();
 
-  // After mounting, we have access to the theme
-  useEffect(() => setMounted(true), []);
+  // // After mounting, we have access to the theme
+  // useEffect(() => setMounted(true), []);
 
   const { children, ...customMeta } = props;
   const router = useRouter();
@@ -78,7 +78,7 @@ export default function Container(props) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Offcanvas />
-      <button
+      {/* <button
         aria-label="Cambiar de blanco a negro"
         type="button"
         className="theme-switch"
@@ -93,7 +93,7 @@ export default function Container(props) {
             )}
           </div>
         )}
-      </button>
+      </button> */}
       <Headroom disableInlineStyles>
         <div className="max-w-full px-8 mx-auto lg:px-4 lg:max-w-2xl">
           <nav className="flex items-center justify-between w-full py-6 lg:py-0 ">

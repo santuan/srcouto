@@ -1,11 +1,8 @@
 .Quote {
   @apply pb-2 pr-4 text-lg text-gray-900 md:text-xl;
+  @apply dark:text-gray-300 dark:-translate-x-4;
 }
 
-:global(.dark) .Quote {
-  @apply text-gray-300 -translate-x-4;
-}
-
-:global(.dark) .Quote h1 {
-  @apply text-gray-300;
+.Quote h1 {
+  @apply dark:text-gray-300;
 }

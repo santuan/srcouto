@@ -1,9 +1,6 @@
 .AppContainer {
   @apply bg-gray-100;
-}
-
-:global(.dark) .AppContainer {
-  @apply bg-gray-900;
+  @apply dark:bg-gray-900;
 }
 
 .PageContainer {
@@ -12,17 +9,12 @@
 
 .Title {
   @apply px-4 mb-4 font-sans text-4xl font-medium tracking-tight text-black md:text-4xl;
-}
-:global(.dark) .Title {
-  @apply text-white;
+  @apply dark:text-white;
 }
 
 .Subtitle {
   @apply relative block px-4 mb-6 font-sans text-xl text-gray-600;
-}
-
-:global(.dark) .Subtitle {
-  @apply text-gray-400;
+  @apply dark:text-gray-400;
 }
 
 .Subtitle a {
@@ -31,8 +23,5 @@
 
 .Divider {
   @apply w-full border-t border-gray-200;
-}
-
-:global(.dark) .Divider {
-  @apply border-gray-800
+  @apply dark:border-gray-800
 }

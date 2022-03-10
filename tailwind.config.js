@@ -3,7 +3,6 @@ const { spacing } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
-  darkMode: 'class',
   theme: {
     fontFamily: {
       serif: ['Vollkorn', 'serif'],

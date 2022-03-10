@@ -2,15 +2,9 @@
   @apply relative flex flex-col items-start justify-center w-full max-w-full py-24 mx-auto overflow-hidden;
 }
 
-:global(.dark) .Footer {
-}
-
 .Divider {
   @apply w-full mb-8 border border-gray-200;
-}
-
-:global(.dark) .Divider {
-  @apply border-gray-800;
+  @apply dark:border-gray-800;
 }
 
 .Grid {
@@ -19,8 +13,5 @@
 
 .GridItem {
   @apply flex flex-col space-y-4;
-}
-
-:global(.dark) .GridItem {
-  @apply text-white;
+  @apply dark:text-white;
 }

@@ -97,13 +97,13 @@ export default function CvPageEs(props) {
           <Link href="/cv/en">
             <a
               data-tip="Traducir al Inglés"
-              className="absolute z-50 w-8 h-8 m-1 font-mono text-lg font-medium text-gray-900 rounded kush-center hover:ring-2 ring-transparent hover:ring-gray-300 dark:text-white right-16 md:right-32"
+              className="absolute z-50 w-8 h-8 m-1 font-mono text-lg font-medium text-gray-900 rounded kush-center hover:ring-2 ring-transparent hover:ring-gray-300 dark:text-white right-3"
             >
               ES
             </a>
           </Link>
           <Popover />
-          <button
+          {/* <button
             aria-label="Cambiar Luz"
             type="button"
             data-tip="Cambiar Luz"
@@ -121,7 +121,7 @@ export default function CvPageEs(props) {
                 )}
               </div>
             )}
-          </button>
+          </button> */}
         </div>
         <HeaderCv />
         <BodyCv />
