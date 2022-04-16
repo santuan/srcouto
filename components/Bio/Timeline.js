@@ -41,7 +41,7 @@ const ProjectsLinks = ({ portfolioLink, webLink }) => {
           Visitar web
         </a>
       )}
-      {portfolioLink && (
+      {/* {portfolioLink && (|
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -50,7 +50,7 @@ const ProjectsLinks = ({ portfolioLink, webLink }) => {
         >
           Ver portfolio
         </a>
-      )}
+      )} */}
     </div>
   );
 };

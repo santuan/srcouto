@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-import ImageCaption from '@/components/Plugs/ImageCaption';
-import Youtube from '@/components/Plugs/Youtube'
+import ImageCaption from '@/components/Plugs/ImageCaption'
 import Quote from '@/components/Plugs/Quote'
+import Youtube from '@/components/Plugs/Youtube'
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -20,11 +19,11 @@ const CustomLink = (props) => {
 };
 
 const MDXComponents = {
+  a: CustomLink,
   Image,
   ImageCaption,
-  Youtube,
   Quote,
-  a: CustomLink
+  Youtube
 };
 
 export default MDXComponents;

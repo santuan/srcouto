@@ -25,7 +25,7 @@ export default function Blog({ posts }) {
     >
       <div className={styles.PageContainer}>
         <Heading
-          title="Blog"
+          title="Escritura"
           subtitle="Artículos en Inglés traducidos al Español. Historias y recursos que se relacionan con el mundo del diseño, la programación y el software libre."
         />
 
@@ -35,7 +35,7 @@ export default function Blog({ posts }) {
           </>
         )} */}
         <SubHeading title="Todas las entradas" />
-        <div className="relative w-full px-3 mb-6">
+        <div className="relative hidden w-full px-3 mb-6">
           <input
             aria-label="Search articles"
             type="text"

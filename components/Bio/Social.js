@@ -11,7 +11,7 @@ const Social = () => {
             rel="noopener noreferrer"
             href="https://github.com/santuan/"
           >
-            <ImGithub className={styles.Icon} />
+            {/* <ImGithub className={styles.Icon} /> */}
             <span>Github</span>
           </a>
 
@@ -20,7 +20,7 @@ const Social = () => {
             rel="noopener noreferrer"
             href="https://twitter.com/santuuan"
           >
-            <ImTwitter className={styles.Icon} />
+            {/* <ImTwitter className={styles.Icon} /> */}
             <span>Twitter</span>
           </a>
 
@@ -29,7 +29,7 @@ const Social = () => {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/santuan/"
           >
-            <ImLinkedin2 className={styles.Icon} />
+            {/* <ImLinkedin2 className={styles.Icon} /> */}
             <span>Linkedin</span>
           </a>
         </div>

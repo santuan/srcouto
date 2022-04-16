@@ -4,7 +4,7 @@ import Container from '@/components/Container';
 import Heading from '@/components/Plugs/Heading';
 import ProjectItems from '@/components/Bio/ProjectItem';
 import Timeline from '@/components/Bio/Timeline';
-
+import Head from 'next/head';
 export default function Blog({ posts }) {
   const filteredProjects = posts.sort(
     (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
@@ -15,6 +15,9 @@ export default function Blog({ posts }) {
       title="Proyectos | Santiago Couto"
       description="Artículos en inglés buscando su sentido en el Español. Historias y recursos relacionados con el mundo del diseño y la programación…"
     >
+      <Head>
+      <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className={styles.PageContainer}>
         <Heading
           title="Proyectos"

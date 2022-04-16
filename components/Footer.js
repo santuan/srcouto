@@ -20,9 +20,9 @@ export default function Footer() {
           <Link href="/blog">
             <a>Blog</a>
           </Link>
-          <Link href="/proyectos">
+          {/* <Link href="/proyectos">
             <a>Proyectos</a>
-          </Link>
+          </Link> */}
           <Link href="/contacto">
             <a>Contacto</a>
           </Link>

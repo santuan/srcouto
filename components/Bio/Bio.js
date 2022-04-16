@@ -38,7 +38,7 @@ const Bio = () => {
           podés sentirte libre de contactarte y trataré de colaborar dentro de
           las posibilidades.
         </p>
-        <p className="text-center duration-300 opacity-70 hover:opacity-100">
+        <p className="italic text-left duration-300 opacity-70 hover:opacity-100">
           Y desde ya, muchas gracias por su atención
         </p>
       </div>

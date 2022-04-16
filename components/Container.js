@@ -111,11 +111,11 @@ export default function Container(props) {
                   Escritura
                 </a>
               </NextLink>
-              <NextLink href="/proyectos">
+              {/* <NextLink href="/proyectos">
                 <a className="p-1 font-mono text-sm font-bold text-gray-900 sm:py-4 sm:pl-6 dark:text-gray-100">
                   Proyectos
                 </a>
-              </NextLink>
+              </NextLink> */}
               <NextLink href="/contacto">
                 <a className="p-1 font-mono text-sm font-bold text-gray-900 sm:py-4 sm:pl-6 dark:text-gray-100">
                   Contacto
