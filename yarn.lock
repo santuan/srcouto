@@ -260,10 +260,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/fira-sans/-/fira-sans-4.5.2.tgz#8fa61c3409b09a1bb82b684083be3920eea2e715"
   integrity sha512-4r4Miy1ilx4c0imrpSWKb6PqzFKi5NwbQX9KJGqK/XEa+nJNilEU6JL+F8o+c1eosOEsdevVxMf2LaP3Y/PipA==
 
-"@fontsource/space-mono@^4.4.2":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.1.tgz#0bf138b40532851ba75f0f1e37f2884810707e1f"
-  integrity sha512-uEC+HTYSD8i546pxU35o5JLsPy1LBqpwl+WTUvJfBq56uTQBl6g1PV0DUzgPPMU4ASEoBdqKSMesjvRUhle6Cw==
+"@fontsource/space-mono@^4.5.5":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.8.tgz#514a7344e706747dcace198a27f840dd104e0a06"
+  integrity sha512-qO3riZauz1yu7g8gumsmKgGitgDx7dQbwjKG+rDhF/OfNNCPyjArcNIU22nvANZ7UuDvLzo3tRprqlosaS7fKA==
 
 "@fontsource/vollkorn-sc@^4.4.2":
   version "4.5.2"
