@@ -255,10 +255,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/fira-sans@^4.4.5":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@fontsource/fira-sans/-/fira-sans-4.5.2.tgz#8fa61c3409b09a1bb82b684083be3920eea2e715"
-  integrity sha512-4r4Miy1ilx4c0imrpSWKb6PqzFKi5NwbQX9KJGqK/XEa+nJNilEU6JL+F8o+c1eosOEsdevVxMf2LaP3Y/PipA==
+"@fontsource/fira-sans@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-sans/-/fira-sans-4.5.8.tgz#1f6a4ee480385f8ffa6e6be3cb270f3e950db602"
+  integrity sha512-b3oQXwVNszC8jL+DJfZ4gvEaBc29eDjL5rRi6oaEm2+Mpl9ORk4gmdGNwkFXzR0SqFhUZscLXFPsopr9tSSPBA==
 
 "@fontsource/space-mono@^4.4.2":
   version "4.5.1"
