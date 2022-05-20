@@ -21,7 +21,7 @@
     "framer-motion": "^4.1.17",
     "gray-matter": "4.0.3",
     "ioredis": "^4.27.3",
-    "lottie-web": "^5.7.8",
+    "lottie-web": "^5.9.3",
     "mdx-prism": "0.3.3",
     "moment": "^2.29.1",
     "next": "^12.0.0",
