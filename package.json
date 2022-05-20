@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "^4.4.5",
+    "@fontsource/fira-sans": "^4.5.8",
     "@fontsource/space-mono": "^4.4.2",
     "@fontsource/vollkorn": "^4.4.2",
     "@fontsource/vollkorn-sc": "^4.4.2",
